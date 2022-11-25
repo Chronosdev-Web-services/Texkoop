@@ -80,8 +80,6 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-
-        {/* desktop menu  */}
       </nav>
     </div>
   );
