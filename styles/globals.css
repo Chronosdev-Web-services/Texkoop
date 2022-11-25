@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+html,
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+div {
+  padding: 0;
+  margin: 0;
+}
+
+.h2-text {
+  font-size: clamp(1.25rem, 1vw + 1rem, 2.25rem);
+  color: #1c2f50;
+}
+.h4-text {
+  font-size: clamp(1rem, 1vw + 0.6rem, 1.563rem);
+}
+.p-text {
+  font-size: clamp(0.938rem, 1vw + 0.6rem, 1.25rem);
+}
+.h4-fixed {
+  font-size: 18px;
+}
+.p-fixed {
+  font-size: 16px;
+}
+
+/* text fonts  */
+.header_class {
+  position: absolute;
+  background-color: #021c47;
+  opacity: 0.7;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: -1;
+}
+
+/* hamburger menu */
+
+.hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3 ease all;
+  cursor: pointer;
+}
+
+.mobile_right.active .hamburger .bar:before {
+  top: 0;
+  transform: rotate(45deg);
+  width: 110%;
+  height: 2.7px;
+}
+.mobile_right.active .hamburger .bar:after {
+  top: 0;
+  transform: rotate(-45deg);
+  width: 110%;
+  height: 2.7px;
+}
+
+.mobile_right.active .hamburger .bar {
+  background-color: transparent;
+}
+
+.hamburger .bar {
+  height: 3px;
+  width: 25px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  display: flex;
+}
+
+.bar::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 60%;
+  background-color: rgb(255, 255, 255);
+  transition: 0.3s ease all;
+  border-radius: 5px;
+}
+
+.bar::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 130%;
+  background-color: rgb(255, 255, 255);
+  transition: 0.3s ease all;
+  border-radius: 5px;
+}
+
+.bar::before {
+  top: 8px;
+}
+
+.bar::after {
+  bottom: 8px;
+}
+
+/* hamburger menu */
