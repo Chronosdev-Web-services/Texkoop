@@ -5,6 +5,10 @@ import NewLocation from "../components/Home/NewLocation";
 import Partners from "../components/Home/Partners";
 import RideWithUs from "../components/Home/RideWithUs";
 import MakeItHappen from "../components/Home/MakeItHappen";
+import DayIn from "../components/Home/DayIn";
+import TooGood from "../components/Home/TooGood";
+import PartnerWithUs from "../components/Home/PartnerWithUs";
+import MobileApp from "../components/Home/MobileApp";
 
 export default function Home() {
   return (
@@ -26,6 +30,10 @@ export default function Home() {
       <Partners />
       <RideWithUs />
       <MakeItHappen />
+      <DayIn />
+      <TooGood />
+      <PartnerWithUs />
+      <MobileApp />
     </Layout>
   );
 }

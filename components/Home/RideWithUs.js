@@ -5,7 +5,7 @@ import Button from "../Reusable/Button";
 const RideWithUs = () => {
   const { t, lang } = useTranslation("home");
   return (
-    <section className="max-w-[1440px] mx-auto grid md:grid-cols-2">
+    <section className="max-w-[1440px] mx-auto grid md:grid-cols-2 bg-pri">
       <div>
         <img
           src="/images/1/f.svg"
@@ -13,7 +13,7 @@ const RideWithUs = () => {
           alt="delivery man riding a bike"
         />
       </div>
-      <div className="bg-pri">
+      <div className="">
         <div className="w-[80%] mx-auto md:[w-90%] text-white flex justify-around  flex-col gap-5 xl:gap-10 gap-y-5 my-20">
           <p className="uppercase text-sec text-xs lg:text-lg">
             {t("ride_top")}

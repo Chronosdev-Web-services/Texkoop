@@ -101,4 +101,79 @@ export const landing = {
       image: "/images/1/logo_4.svg",
     },
   ],
+  too_goood: [
+    { id: 1, text: "too_good_a" },
+    {
+      id: 2,
+      text: "too_good_b",
+    },
+    {
+      id: 3,
+      text: "too_good_c",
+    },
+    {
+      id: 4,
+      text: "too_good_d",
+    },
+    {
+      id: 5,
+      text: "too_good_e",
+    },
+    {
+      id: 6,
+      text: "too_good_f",
+    },
+  ],
+};
+export const about = {
+  what_we_do: [
+    { id: 1, top: "wedo_top_a", head: "wedo_head_a", text: "wedo_text_a" },
+    { id: 2, top: "wedo_top_b", head: "wedo_head_b", text: "wedo_text_b" },
+  ],
+  reliable: [
+    {
+      id: 1,
+      head: "card_a_head",
+      image: "/images/2/2ci.svg",
+      text: "card_a_text",
+    },
+    {
+      id: 2,
+      head: "card_b_head",
+      image: "/images/2/2cii.svg",
+      text: "card_b_text",
+    },
+    {
+      id: 3,
+      head: "card_c_head",
+      image: "/images/2/2ciii.svg",
+      text: "card_c_text",
+    },
+  ],
+  services: [
+    {
+      id: 1,
+      head: "serv_card_a_head",
+      image: "/images/2/2di.svg",
+      text: "serv_card_a_text",
+    },
+    {
+      id: 2,
+      head: "serv_card_b_head",
+      image: "/images/2/2dii.svg",
+      text: "serv_card_b_text",
+    },
+    {
+      id: 3,
+      head: "serv_card_c_head",
+      image: "/images/2/2diii.svg",
+      text: "serv_card_c_text",
+    },
+    {
+      id: 4,
+      head: "serv_card_d_head",
+      image: "/images/2/2div.svg",
+      text: "serv_card_d_text",
+    },
+  ],
 };

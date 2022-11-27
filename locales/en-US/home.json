@@ -47,5 +47,20 @@
   "happen_1": "Log A Delivery",
   "happen_2": "Pack Your Good",
   "happen_3": "Safe Delivery",
-  "happen_4": "Rider Picks Parcel"
+  "happen_4": "Rider Picks Parcel",
+  "day_head": "Day In, Day Out!",
+  "day_text": "We are available to deliver your goods and run your last-minute errands at all times! All you need to do is log your request and we'll be available to deliver.",
+  "too_good_a": "Customer Satisfaction",
+  "too_good_b": "High Tech Solutions",
+  "too_good_c": "Transparency",
+  "too_good_d": "Timely Delivery",
+  "too_good_e": "Tailor-made Solutions",
+  "too_good_f": "Green & Agile Solutions",
+  "partner_top": "PARTNER WITH US",
+  "partner_text": "Ready To Boost Your Service Offerings? ",
+  "partner_button": "Partner with us",
+  "app_head_i": "Our Mobile Application  ",
+  "app_text_i": "You asked and we heard you. ",
+  "app_text_ii": "Our mobile application will enable everyone to use our services on-the-go.",
+  "app_head_ii": "Request Early Access"
 }

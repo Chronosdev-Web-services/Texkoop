@@ -1,26 +1,54 @@
-import React from 'react';
-import useTranslation from 'next-translate/useTranslation';
-import Footer from '../components/Footer';
-import Layout from '../components/Layout';
+import React from "react";
+import useTranslation from "next-translate/useTranslation";
+import Layout from "../components/Layout";
+import Image from "next/image";
+import WhatWedo from "../components/About/WhatWedo";
+import Reliable from "../components/About/Reliable";
+import Service from "../components/About/Service";
 
 const About = () => {
-  const { t, lang } = useTranslation('about');
+  const { t, lang } = useTranslation("about");
 
   return (
     <Layout title="About">
-      <p>{t('about')}</p>
+      <section className="w-full relative h-screen">
+        <Image
+          src="/images/2/2a.svg"
+          quality={100}
+          fill
+          sizes="100vw"
+          style={{
+            objectFit: "cover",
+          }}
+        />
+      </section>
+      <WhatWedo />
+      <section className="w-full relative h-screen">
+        <Image
+          src="/images/2/2c.svg"
+          quality={100}
+          fill
+          sizes="100vw"
+          style={{
+            objectFit: "cover",
+          }}
+        />
+      </section>
+      <Reliable />
+      <section className="w-full relative h-screen">
+        <Image
+          src="/images/2/2d.svg"
+          quality={100}
+          fill
+          sizes="100vw"
+          style={{
+            objectFit: "cover",
+          }}
+        />
+      </section>
+      <Service />
     </Layout>
   );
 };
 
 export default About;
-
-export async function getStaticProps({ locale }) {
-  let about =
-    locale === 'en-US' ? 'English my g' : locale === 'fr' ? 'french nigga' : '';
-  return {
-    props: {
-      about,
-    },
-  };
-}

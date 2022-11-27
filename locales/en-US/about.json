@@ -1,3 +1,27 @@
 {
-    "about":"English Madame"
+  "wedo_top_a": "WHAT WE DO  ",
+  "wedo_top_b": "OUR MISSION",
+  "wedo_head_a": "Last-Mile Delivery",
+  "wedo_head_b": "Tailor-Made Innovation",
+  "wedo_text_a": "We provide on-demand delivery and errand services. Our approach is to seamlessly provide quality service, while ensuring that in-city operations are sustainable and eco-friendly.",
+  "wedo_text_b": "We aim to be a solution-driven delivery services business that makes life easier for our users. This crystallises our business essence to be the fulcrum of last-mile delivery innovations.",
+  "reliable_head": "Reliable & Flexible ",
+  "reliable_text": "We are committed to providing robust and inclusive services that meet our customers all-round needs.",
+  "card_a_head": "Omni-channel",
+  "card_b_head": "Swift Deliveries",
+  "card_c_head": "Swift Returns",
+  "card_a_text": "We are unlocking omni-channel potential for businesses in retail & the e-commerce industry, by providing them visiblity throughour platform. ",
+  "card_b_text": "We seamlessly coordinate and handle all delivery requests with care, speed, and precision. Principally following sustainable practices. ",
+  "card_c_text": "We guarantee easy return of goods, in a sustainable manner. Items can be returned just as easily as you’ve ordered them.",
+  "serv_top": "OUR FOCUS",
+  "serv_head": "Service Excellence",
+  "serv_text": "We are dedicated to delivering on our brand promise, which is to make the lives of every customer easier by being responsive to their problems and needs.",
+  "serv_card_a_head": "Innovation",
+  "serv_card_b_head": "Flexibility",
+  "serv_card_c_head": "Inclusivity",
+  "serv_card_d_head": "Customer-Centered",
+  "serv_card_a_text": "We deploy cutting-edge logistics management tools to plan, coordinate, and monitor delivery schedules.",
+  "serv_card_b_text": "We provide the possibility of modifying your delivery preferences; with the choice of instant, same-day & scheduled delivery. ",
+  "serv_card_c_text": "We empower MOM-&-POPs to bring their shoppers' experience on par with big brands, while keeping the local touch.",
+  "serv_card_d_text": "We ensure seamless and effective communication with our clients at all times, to boost their confidence and to build trust."
 }

@@ -1,34 +1,36 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import React, { useState } from 'react';
-import useTranslation from 'next-translate/useTranslation';
-import Button from './Reusable/Button';
+import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
+import useTranslation from "next-translate/useTranslation";
+import Button from "./Reusable/Button";
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
 
-  const { t } = useTranslation('common');
+  const { t } = useTranslation("common");
   const router = useRouter();
 
   return (
     <div
       className={`text-white absolute z-10 w-full top-0 ${
-        navOpen && 'h-[100vh]'
+        navOpen && "h-[100vh]"
       }`}
     >
       <div className="header_class"></div>
       <nav className="max-w-[1440px] w-[90%] mx-auto flex flex-col lg:flex-row justify-between py-7 items-center font-[600] z-10 text-white ">
         <div className="flex md:block items-center ">
           <div className="mr-auto">
-            <img
-              src="/icons/Logo.svg"
-              alt="Texkoop Logo"
-              width="150"
-              height="150"
-              layout="responsive"
-              className=""
-            />
+            <Link href="/">
+              <Image
+                src="/icons/Logo.svg"
+                alt="Texkoop Logo"
+                width="250"
+                height="200"
+                layout="responsive"
+                className=""
+              />
+            </Link>
           </div>
           <div className={` hidden`}>
             <div className="hamburger" onClick={() => setNavOpen(!navOpen)}>
@@ -39,20 +41,20 @@ const Navbar = () => {
 
         <div className="hidden lg:flex gap-10 flex-col md:flex-row justify-between">
           <Link href="#">
-            <p>{t('Nav1')}</p>
+            <p>{t("Nav1")}</p>
           </Link>
           <Link href="#">
-            <p>{t('Nav2')}</p>
+            <p>{t("Nav2")}</p>
           </Link>
           <Link href="#">
-            <p>{t('Nav3')}</p>
+            <p>{t("Nav3")}</p>
           </Link>
           <Link href="#">
-            <p>{t('Nav4')}</p>
+            <p>{t("Nav4")}</p>
           </Link>
         </div>
         <div className="hidden lg:flex flex-col md:flex-row justify-between gap-10">
-          <Button text={t('Nav5')} />
+          <Button text={t("Nav5")} />
 
           <div>
             <ul>
