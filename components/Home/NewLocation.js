@@ -1,4 +1,5 @@
 import useTranslation from "next-translate/useTranslation";
+import Image from "next/image";
 import React from "react";
 import Button from "../Reusable/Button";
 
@@ -8,7 +9,7 @@ const NewLocation = () => {
     <section className="max-w-[1440px] mx-auto md:flex">
       <div className="md:min-w-[60%] bg-pri py-5">
         <div className="w-[80%] mx-auto ">
-          <div className="w-[80%]  md:[w-90%] text-white grid gap-5 gap-y-5 my-10">
+          <div className="w-[80%]  md:[w-90%] text-white flex flex-col justify-between gap-10">
             <p className="uppercase text-sec text-xs lg:text-lg">
               {t("location_top")}
             </p>
@@ -24,7 +25,19 @@ const NewLocation = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-full"></div>
+      <div className="w-full relative h-[400px] md:h-full">
+        <img
+          src="/images/3/3b.svg"
+          alt="bike man on helmet"
+          quality={100}
+          fill
+          sizes="100vw"
+          style={{
+            objectFit: "cover",
+          }}
+          className="z-10"
+        />
+      </div>
     </section>
   );
 };
