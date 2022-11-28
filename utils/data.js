@@ -177,3 +177,43 @@ export const about = {
     },
   ],
 };
+export const partner = {
+  what_can_you_expect: [
+    {
+      id: 1,
+      head: "card_a_head",
+      image: "/images/3/3ci.svg",
+      text: "card_a_text",
+    },
+    {
+      id: 2,
+      head: "card_b_head",
+      image: "/images/3/3cii.svg",
+      text: "card_b_text",
+    },
+    {
+      id: 3,
+      head: "card_c_head",
+      image: "/images/3/3ciii.svg",
+      text: "card_c_text",
+    },
+    {
+      id: 4,
+      head: "card_d_head",
+      image: "/images/3/3civ.svg",
+      text: "card_d_text",
+    },
+    {
+      id: 5,
+      head: "card_d_head",
+      image: "/images/3/3cv.svg",
+      text: "card_d_text",
+    },
+    {
+      id: 6,
+      head: "card_d_head",
+      image: "/images/3/3cvi.svg",
+      text: "card_d_text",
+    },
+  ],
+};
