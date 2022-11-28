@@ -205,15 +205,15 @@ export const partner = {
     },
     {
       id: 5,
-      head: "card_d_head",
+      head: "card_e_head",
       image: "/images/3/3cv.svg",
-      text: "card_d_text",
+      text: "card_e_text",
     },
     {
       id: 6,
-      head: "card_d_head",
+      head: "card_f_head",
       image: "/images/3/3cvi.svg",
-      text: "card_d_text",
+      text: "card_f_text",
     },
   ],
 };

@@ -5,6 +5,7 @@ import Layout from "../components/Layout";
 import Expect from "../components/Partner/Expect";
 import RideWithUs from "../components/Partner/RideWithUs";
 import Suscribe from "../components/Partner/Suscribe";
+import WhatWillYouNeed from "../components/Partner/WhatWillYouNeed";
 
 const partner = () => {
   const { t } = useTranslation("partner");
@@ -30,6 +31,7 @@ const partner = () => {
       </section>
       <RideWithUs />
       <Expect />
+      <WhatWillYouNeed />
     </Layout>
   );
 };

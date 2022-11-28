@@ -60,9 +60,9 @@ const Footer = () => {
             <>
               <p>{t("Foo1bii")}</p>
             </>
-            <>
+            <Link href="/partners">
               <p>{t("Foo1biii")}</p>
-            </>
+            </Link>
           </div>
           <div className="grid gap-1">
             <p className="text-[25px] font-bold">{t("Foo1c")}</p>
