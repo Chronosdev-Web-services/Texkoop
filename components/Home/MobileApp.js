@@ -15,8 +15,7 @@ const MobileApp = () => {
             {t("app_text_ii")}
           </p>
           <p className="h2-text font-bold">{t("app_head_ii")}</p>
-          <div className="flex justify-between">
-            {" "}
+          <div className="flex center">
             <Image
               src="/images/1/google_store.svg"
               alt="get on Google Store"
@@ -34,7 +33,7 @@ const MobileApp = () => {
           </div>
         </div>
 
-        <div className="w-full flex justify-end">
+        <div className="ml-[20%]">
           <Image
             src="/images/1/i.svg"
             alt="delivery woman"

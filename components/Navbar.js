@@ -72,7 +72,7 @@ const Navbar = () => {
                 className="flex gap-2 items-center"
               >
                 <div>
-                  <img src="/icons/fr.svg" alt="french" className="w-[15px]" />
+                  <img src="/icons/fr.svg" alt="french" className="w-[15px] " />
                 </div>
                 <p>Fr</p>
               </Link>

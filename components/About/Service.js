@@ -1,5 +1,4 @@
 import useTranslation from "next-translate/useTranslation";
-import Image from "next/image";
 import React from "react";
 import { about } from "../../utils/data";
 import Button from "../Reusable/Button";
@@ -21,12 +20,10 @@ const Service = () => {
             className="px-5 py-3 grid gap-5 hover:bg-sec transition"
           >
             <div>
-              <Image
+              <img
                 src={card.image}
                 alt="how we stand out"
                 className="w-full object-cover"
-                width="100"
-                height="100"
               />
             </div>
             <p className="text-lg font-bold ">{t(card.head)}</p>
