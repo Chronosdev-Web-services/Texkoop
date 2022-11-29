@@ -7,6 +7,7 @@
   "email": "email address",
   "number": "telephone number",
   "city": "Select City ",
+  "message": "Message",
   "select": "We collect this data for the purposes of processing your application. By clicking this box, you acknowledge that you have read and understood the privacy policy and terms of service.*Required ",
   "required": "required",
   "button_a": "let me know",

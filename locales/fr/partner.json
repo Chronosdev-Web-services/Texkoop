@@ -6,6 +6,7 @@
   "c_name": "Nom de l'Entreprise",
   "email": "Address E-mail",
   "number": "Numéro de Téléphone",
+  "message": "Votre Message",
   "city": "Sélectionnez une Ville ",
   "select": "J'accepte de recevoir des informations concernant la mise en service de Texkoop par e-mail et par téléphone.",
   "required": "Requis",

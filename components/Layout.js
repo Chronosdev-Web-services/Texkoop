@@ -6,7 +6,7 @@ const Layout = ({ children, title }) => {
   return (
     <>
       <Head>
-        <title>{title ? title + "- Texkoop" : "Texkoop"}</title>
+        <title>{title ? title + " - Texkoop" : "Texkoop"}</title>
         <meta name="description" content="Logistics Company" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

@@ -16,11 +16,13 @@ const TooGood = () => {
               {too_goood.map((data) => (
                 <div
                   key={data.id}
-                  className={`flex gap-2 ${
+                  className={`flex gap-2 items-center ${
                     data.id % 2 === 0 ? "" : "justify-"
                   }`}
                 >
-                  <img src="/icons/tick.svg" />
+                  <div>
+                    <img src="/icons/tick.svg" />
+                  </div>
                   <p>{t(data.text)}</p>
                 </div>
               ))}

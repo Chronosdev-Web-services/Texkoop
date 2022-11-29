@@ -46,9 +46,12 @@ const ContactForm = () => {
         </div>
         <div className="col-span-2">
           <label className="">
-            {t("partner:email")} <span className="text-red-600">*</span>
+            {t("partner:message")} <span className="text-red-600">*</span>
           </label>
-          <textarea className="w-full p-3 outline-none border-black border" />
+          <textarea
+            className="w-full p-3 outline-none border-black border"
+            rows="7"
+          />
         </div>
 
         <div>

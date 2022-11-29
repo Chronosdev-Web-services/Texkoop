@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`text-white absolute z-10 w-full top-0 ${
+      className={`text-white sticky  z-10 w-full top-0 ${
         navOpen && "h-[100vh]"
       }`}
     >
