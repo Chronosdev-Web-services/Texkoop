@@ -7,6 +7,7 @@
     "/about": ["about"],
     "/partner": ["partner"],
     "/contact": ["contact", "partner"],
-    "/services": ["services", "home"]
+    "/services": ["services", "home"],
+    "/FAQ": ["faq"]
   }
 }
