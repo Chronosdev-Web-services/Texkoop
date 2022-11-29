@@ -6,6 +6,7 @@
     "/": ["home"],
     "/about": ["about"],
     "/partner": ["partner"],
-    "/contact": ["contact", "partner"]
+    "/contact": ["contact", "partner"],
+    "/services": ["services", "home"]
   }
 }

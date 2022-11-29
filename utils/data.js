@@ -217,3 +217,57 @@ export const partner = {
     },
   ],
 };
+export const services = {
+  optimal_delivery: [
+    {
+      id: 1,
+      head: "card_a_head",
+      image: "/images/5/5bi.svg",
+      text: "card_a_text",
+    },
+    {
+      id: 2,
+      head: "card_b_head",
+      image: "/images/5/5bii.svg",
+      text: "card_b_text",
+    },
+    {
+      id: 3,
+      head: "card_c_head",
+      image: "/images/5/5biii.svg",
+      text: "card_c_text",
+    },
+    {
+      id: 4,
+      head: "card_d_head",
+      image: "/images/5/5biv.svg",
+      text: "card_d_text",
+    },
+  ],
+  why_we_stand_out: [
+    {
+      id: 1,
+      image: "/images/5/5di.svg",
+      head: "serv_a_head",
+      text: "serv_a_text",
+      scenario: "scenario_a",
+      solution: "solution_a",
+    },
+    {
+      id: 2,
+      image: "/images/5/5dii.svg",
+      head: "serv_b_head",
+      text: "serv_b_text",
+      scenario: "scenario_b",
+      solution: "solution_b",
+    },
+    {
+      id: 3,
+      image: "/images/5/5diii.svg",
+      head: "serv_c_head",
+      text: "serv_c_text",
+      scenario: "scenario_c",
+      solution: "solution_c",
+    },
+  ],
+};

@@ -22,7 +22,11 @@ const Navbar = () => {
         <div className="flex md:block items-center ">
           <div className="mr-auto">
             <Link href="/">
-              <img src="/icons/Logo.svg" alt="Texkoop Logo" className="" />
+              <img
+                src="/icons/Logo.svg"
+                alt="Texkoop Logo"
+                className="w-[50%]"
+              />
             </Link>
           </div>
           <div className={` hidden`}>
@@ -33,10 +37,10 @@ const Navbar = () => {
         </div>
 
         <div className="hidden lg:flex gap-10 flex-col md:flex-row justify-between">
-          <Link href="#">
+          <Link href="/about">
             <p>{t("Nav1")}</p>
           </Link>
-          <Link href="#">
+          <Link href="/services">
             <p>{t("Nav2")}</p>
           </Link>
           <Link href="/contact">

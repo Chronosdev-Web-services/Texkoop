@@ -19,7 +19,9 @@ div {
   padding: 0;
   margin: 0;
 }
-
+.h1-text {
+  font-size: clamp(1.5rem, 2vw + 0.9rem, 4.375rem);
+}
 .h2-text {
   font-size: clamp(1.25rem, 1vw + 1rem, 2.25rem);
 }
