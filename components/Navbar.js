@@ -22,14 +22,7 @@ const Navbar = () => {
         <div className="flex md:block items-center ">
           <div className="mr-auto">
             <Link href="/">
-              <Image
-                src="/icons/Logo.svg"
-                alt="Texkoop Logo"
-                width="250"
-                height="200"
-                layout="responsive"
-                className=""
-              />
+              <img src="/icons/Logo.svg" alt="Texkoop Logo" className="" />
             </Link>
           </div>
           <div className={` hidden`}>
@@ -46,7 +39,7 @@ const Navbar = () => {
           <Link href="#">
             <p>{t("Nav2")}</p>
           </Link>
-          <Link href="#">
+          <Link href="/contact">
             <p>{t("Nav3")}</p>
           </Link>
           <Link href="#">

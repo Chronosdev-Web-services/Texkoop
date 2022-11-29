@@ -3,7 +3,7 @@ import React from "react";
 import Button from "../Reusable/Button";
 
 const WhatWillYouNeed = () => {
-  const { t, lang } = useTranslation("partner");
+  const { t } = useTranslation("partner");
   return (
     <section className="max-w-[1440px] mx-auto grid md:grid-cols-2 bg-pri">
       <div className="w-full relative h-full">
