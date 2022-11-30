@@ -16,6 +16,7 @@ const services = () => {
           src="/images/5/5a.svg"
           quality={100}
           fill
+          priority
           alt="Texkoop delivery lady"
           sizes="100vw"
           style={{

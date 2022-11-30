@@ -12,31 +12,49 @@ const Navbar = () => {
   const router = useRouter();
 
   return (
-    <div
-      className={`text-white sticky  z-10 w-full top-0 ${
-        navOpen && "h-[100vh]"
-      }`}
-    >
-      <div className="header_class"></div>
-      <nav className="max-w-[1440px] w-[90%] mx-auto flex flex-col lg:flex-row justify-between py-7 items-center font-[600] z-10 text-white ">
-        <div className="flex md:block items-center ">
-          <div className="mr-auto">
+    <div className={` sticky  z-10 w-full top-0`}>
+      {!navOpen && <div className="header_class "></div>}
+      <nav className="max-w-[1440px] w-[90%] flex lg:h-auto flex-col lg:flex-row justify-between py-4 lg:py-7 lg:items-center font-[600] z-10 lg:text-white mx-auto">
+        <div className="flex relative z-20 lg:block items-center w-full lg:w-auto justify-between">
+          <div className="">
             <Link href="/">
               <img
-                src="/icons/Logo.svg"
+                src={`${navOpen ? "/icons/Logo.svg" : "/icons/Logo.svg"}`}
                 alt="Texkoop Logo"
                 className="w-[50%]"
               />
             </Link>
           </div>
-          <div className={` hidden`}>
-            <div className="hamburger" onClick={() => setNavOpen(!navOpen)}>
-              <div className="bar"></div>
-            </div>
+          <div
+            onClick={() => {
+              setNavOpen(!navOpen);
+            }}
+            className={` relative w-6  items-center lg:hidden`}
+          >
+            <div
+              className={`origin-center inset-0 w-6 h-0.5 m-auto rounded bg-sec transition duration-500 ${
+                navOpen && "absolute rotate-45"
+              }`}
+            ></div>
+            <div
+              className={`inset-0 origin-center w-6 h-0.5 mt-2 rounded bg-sec transition duration-500 ${
+                navOpen && "absolute -rotate-45 mt-0"
+              } `}
+            ></div>
+            <div
+              className={`w-6 origin-center h-0.5 mt-2 rounded bg-sec transition duration-500${
+                navOpen ? " opacity-0 mt-0" : " "
+              }`}
+            ></div>
           </div>
         </div>
 
-        <div className="hidden lg:flex gap-10 flex-col md:flex-row justify-between">
+        <div
+          id="navlinks"
+          className={` flex  flex-col my-7 lg:my-0 gap-10 lg:flex-row justify-between ${
+            navOpen ? "lg:flex" : "hidden lg:flex"
+          }`}
+        >
           <Link href="/about">
             <p>{t("Nav1")}</p>
           </Link>
@@ -46,13 +64,14 @@ const Navbar = () => {
           <Link href="/contact">
             <p>{t("Nav3")}</p>
           </Link>
-          <Link href="#">
-            <p>{t("Nav4")}</p>
-          </Link>
-        </div>
-        <div className="hidden lg:flex flex-col md:flex-row justify-between gap-10">
-          <Button text={t("Nav5")} />
-
+          <div className="lg:float-left">
+            <Link href="#">
+              <p>{t("Nav4")}</p>
+            </Link>
+          </div>
+          <div className="">
+            <Button text={t("Nav5")} />
+          </div>
           <div>
             <ul>
               <Link

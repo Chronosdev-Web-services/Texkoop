@@ -30,7 +30,6 @@ const NewLocation = () => {
           src="/images/3/3b.svg"
           alt="bike man on helmet"
           quality={100}
-          fill
           sizes="100vw"
           style={{
             objectFit: "cover",
