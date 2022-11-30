@@ -18,7 +18,7 @@ export default function Home() {
           <video
             src="/videos/1.mp4"
             muted
-            controls
+            autoPlay
             className="w-full object-cover h-full"
           ></video>
         </div>
