@@ -19,7 +19,7 @@ const Navbar = () => {
           <div className="">
             <Link href="/">
               <img
-                src="/icons/Logo_black.svg"
+                src="/icons/logo_black.svg"
                 alt="Texkoop Logo"
                 className="w-[50%] md:w-[30%] lg:hidden"
               />
