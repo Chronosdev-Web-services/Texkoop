@@ -12,16 +12,23 @@ const Navbar = () => {
   const router = useRouter();
 
   return (
-    <div className={` sticky  z-10 w-full top-0`}>
+    <div className={` sticky  z-10 w-full top-0 ${navOpen && "bg-white"}`}>
       {!navOpen && <div className="header_class "></div>}
       <nav className="max-w-[1440px] w-[90%] flex lg:h-auto flex-col lg:flex-row justify-between py-4 lg:py-7 lg:items-center font-[600] z-10 lg:text-white mx-auto">
         <div className="flex relative z-20 lg:block items-center w-full lg:w-auto justify-between">
           <div className="">
             <Link href="/">
               <img
-                src={`${navOpen ? "/icons/Logo.svg" : "/icons/Logo.svg"}`}
+                src="/icons/Logo_black.svg"
                 alt="Texkoop Logo"
-                className="w-[50%]"
+                className="w-[50%] md:w-[30%] lg:hidden"
+              />
+            </Link>
+            <Link href="/">
+              <img
+                src="/icons/Logo.svg"
+                alt="Texkoop Logo"
+                className="w-[50%] hidden lg:block"
               />
             </Link>
           </div>
@@ -52,7 +59,7 @@ const Navbar = () => {
         <div
           id="navlinks"
           className={` flex  flex-col my-7 lg:my-0 gap-10 lg:flex-row justify-between ${
-            navOpen ? "lg:flex" : "hidden lg:flex"
+            navOpen ? "lg:flex z-30 bg-white" : "hidden lg:flex"
           }`}
         >
           <Link href="/about">
