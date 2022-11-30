@@ -42,12 +42,12 @@ const Footer = () => {
 
           <div className="grid gap-1">
             <p className="text-[25px] font-bold">Support</p>
-            <>
+            <Link href="/FAQ">
               <p>{t("Foo1ai")}</p>
-            </>
-            <>
+            </Link>
+            <Link href="/privacy_policy  ">
               <p>{t("Foo1aii")}</p>
-            </>
+            </Link>
             <>
               <p>{t("Foo1aiii")}</p>
             </>
@@ -60,7 +60,7 @@ const Footer = () => {
             <>
               <p>{t("Foo1bii")}</p>
             </>
-            <Link href="/partners">
+            <Link href="/partner">
               <p>{t("Foo1biii")}</p>
             </Link>
           </div>

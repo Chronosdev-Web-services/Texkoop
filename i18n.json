@@ -8,6 +8,7 @@
     "/partner": ["partner"],
     "/contact": ["contact", "partner"],
     "/services": ["services", "home"],
-    "/FAQ": ["faq"]
+    "/FAQ": ["faq"],
+    "/privacy_policy": ["privacy"]
   }
 }

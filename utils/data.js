@@ -271,3 +271,70 @@ export const services = {
     },
   ],
 };
+export const privacy = {
+  data: [
+    {
+      id: 1,
+      head: "head_a",
+      text: "text_a",
+      sub: [
+        {
+          id: 1,
+          head: "head_a_i",
+          text: "text_a_i",
+        },
+        {
+          id: 2,
+          head: "head_a_ii",
+          text: "text_a_ii",
+        },
+        {
+          id: 3,
+          head: "head_a_iii",
+          text: "text_a_iii",
+        },
+      ],
+    },
+    {
+      id: 2,
+      head: "head_b",
+      sub: [
+        {
+          id: 1,
+          head: "head_b_i",
+          text: "text_b_i",
+        },
+        {
+          id: 2,
+          head: "head_b_ii",
+          text: "text_b_ii",
+        },
+      ],
+    },
+    {
+      id: 3,
+      head: "head_c",
+      text: "text_c",
+    },
+    {
+      id: 4,
+      head: "head_d",
+      text: "text_d",
+    },
+    {
+      id: 5,
+      head: "head_e",
+      text: "text_e",
+    },
+    {
+      id: 6,
+      head: "head_f",
+      text: "text_f",
+    },
+    {
+      id: 7,
+      head: "head_g",
+      text: "text_g",
+    },
+  ],
+};
