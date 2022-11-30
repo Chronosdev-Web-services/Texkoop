@@ -10,7 +10,7 @@ const Layout = ({ children, title }) => {
         <meta name="description" content="Logistics Company" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col min-h-screen justify-between">
         <Navbar />
         <main>{children}</main>
         <Footer />

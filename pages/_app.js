@@ -1,5 +1,7 @@
 import { Router } from "next/router";
 import { useState } from "react";
+import Layout from "../components/Layout";
+import Loader from "../components/Loader";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
@@ -11,7 +13,17 @@ function MyApp({ Component, pageProps }) {
   Router.events.on("routeChangeComplete", (url) => {
     setLoading(false);
   });
-  return <> {<Component {...pageProps} />}</>;
+  return (
+    <>
+      {loading ? (
+        <Layout>
+          <Loader />
+        </Layout>
+      ) : (
+        <Component {...pageProps} />
+      )}
+    </>
+  );
 }
 
 export default MyApp;
