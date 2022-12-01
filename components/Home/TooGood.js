@@ -6,8 +6,8 @@ const TooGood = () => {
   const { too_goood } = landing;
   const { t, lang } = useTranslation("home");
   return (
-    <section className="  my-20 mb-52">
-      <div className="bg-pri max-w-[1440px] mx-auto">
+    <section className="bg-pri  my-20 mb-52">
+      <div className="max-w-[1440px] mx-auto">
         <div className=" w-[90%] mx-auto text-white grid md:grid-cols-2">
           <div className=""></div>
           <div className="my-10">

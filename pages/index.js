@@ -23,6 +23,7 @@ export default function Home() {
           ></video>
         </div>
       </div>
+
       <Delivery />
       <StandOut />
       <NewLocation />
