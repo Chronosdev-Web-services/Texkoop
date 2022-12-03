@@ -2,6 +2,7 @@ import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import React from "react";
 import RideForm from "./RideForm";
+import bike_man from "../../public/images/3/3b.svg";
 
 const RideWithUs = () => {
   const { t } = useTranslation("partner");
@@ -20,10 +21,12 @@ const RideWithUs = () => {
           </div>
           <div className="w-full relative h-[400px] md:h-full">
             <Image
-              src="/images/3/3b.svg"
+              src={bike_man}
               alt="bike man on helmet"
               quality={100}
               fill
+              placeholder="blur"
+              blurDataURL="/images/3/3b.svg"
               sizes="100vw"
               style={{
                 objectFit: "cover",

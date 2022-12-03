@@ -1,4 +1,5 @@
 import useTranslation from "next-translate/useTranslation";
+import Image from "next/image";
 import React from "react";
 import Button from "../Reusable/Button";
 
@@ -9,12 +10,13 @@ const WhatWillYouNeed = () => {
       <div className="clip2 w-[100px] h-[100px] top-0 right-0 absolute bg-sec"></div>
       <div className=" max-w-[1440px] mx-auto grid md:grid-cols-2">
         <div className="w-full relative h-full">
-          <img
+          <Image
             src="/images/3/3c.svg"
             alt="bike man on helmet"
             quality={100}
-            fill
+            layout="fill"
             sizes="100vw"
+            priority
             style={{
               objectFit: "cover",
             }}

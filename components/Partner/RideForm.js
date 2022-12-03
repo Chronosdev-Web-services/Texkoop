@@ -1,9 +1,32 @@
 import useTranslation from "next-translate/useTranslation";
-import React from "react";
+import React, { useState } from "react";
 import Button from "../Reusable/Button";
 
 const RideForm = () => {
   const { t } = useTranslation("partner");
+  const [form, setForm] = useState({
+    f_name: "",
+    l_name: "",
+    c_name: "",
+    email: "",
+    number: "",
+  });
+  const [name, setName] = useState("");
+  const [touched, setTouched] = useState(false);
+  const [valid, setValid] = useState({
+    f_name: false,
+    l_name: false,
+    c_name: false,
+    email: false,
+    number: false,
+  });
+  const isValid = name !== "";
+
+  const UpdateField = (e, field) => {
+    e.preventDefault();
+    setForm({ ...form, field: e.target.value });
+  };
+
   return (
     <form className=" grid md:grid-cols-2 gap-5 my-10">
       <div>
@@ -12,8 +35,12 @@ const RideForm = () => {
         </label>
         <input
           type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          onBlur={() => setTouched(true)}
           className="w-full p-3 outline-none border-white bg-transparent border"
         />
+        {touched && !isValid && <p className="text-red-600">error</p>}
       </div>
       <div>
         <label className="">
@@ -22,6 +49,8 @@ const RideForm = () => {
         </label>
         <input
           type="text"
+          value={form.l_name}
+          onChange={(e) => UpdateField(e, l_name)}
           className="w-full p-3 outline-none border-white bg-transparent border"
         />
       </div>
@@ -40,6 +69,8 @@ const RideForm = () => {
         </label>
         <input
           type="email"
+          value={form.email}
+          onChange={(e) => UpdateField(e, email)}
           className="w-full p-3 outline-none border-white bg-transparent border"
         />
       </div>
@@ -49,6 +80,8 @@ const RideForm = () => {
         </label>
         <input
           type="text"
+          value={form.number}
+          onChange={(e) => UpdateField(e, number)}
           className="w-full p-3 outline-none border-white bg-transparent border"
         />
       </div>
@@ -64,7 +97,7 @@ const RideForm = () => {
         </label>
       </div>
       <div>
-        <Button text="Apply" />
+        <Button text="Apply" onClick={() => console.log(form)} />
       </div>
     </form>
   );

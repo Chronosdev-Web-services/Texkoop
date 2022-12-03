@@ -617,3 +617,15 @@ div {
 .how_we_do {
   @apply w-[200px] lg:w-[300px] h-[200px] lg:h-[300px] rounded-[50%] border border-sec hover:bg-sec p-10;
 }
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown .dropdown_list {
+  display: none;
+}
+
+.dropdown:hover .dropdown_list {
+  display: block;
+}
