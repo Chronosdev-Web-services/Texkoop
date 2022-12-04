@@ -14,19 +14,18 @@ const NewLocation = () => {
         <div className="md:w-[55%] grid  place-items-center">
           <div className="w-[80%] ">
             <div className="  md:[w-90%] text-white mt-auto grid gap-5 my-10">
-              <p className="uppercase text-sec nav-text mt-20">
-                {t("location_top")} ?
-              </p>
-              <Fade cascade>
-                <p className="h2-text font-bold mb-5">
-                  <Fade duration={300}>{t("location_headi")}</Fade>
-
-                  <Fade cascade duration={400}>
-                    {t("location_headii")}
-                  </Fade>
+              <Fade cascade damping={0.4}>
+                {" "}
+                <p className="uppercase text-sec nav-text mt-20">
+                  {t("location_top")} ?
                 </p>
+                <p className="h2-text font-bold mb-5">
+                  {t("location_headi")}
+                  <br></br>
+                  {t("location_headii")}
+                </p>
+                <p className="my-5">{t("location_text")}</p>
               </Fade>
-              <p className="my-5">{t("location_text")}</p>
               <div>
                 <Button text={t("location_button")} />
               </div>

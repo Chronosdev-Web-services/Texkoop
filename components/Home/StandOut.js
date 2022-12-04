@@ -9,12 +9,9 @@ const StandOut = () => {
   const { why_we_stand_out } = landing;
   return (
     <section className="my-20 mx-auto w-[90%] max-w-[1440px]">
-      {" "}
-      <p className="h2-text font-bold my-5 text-pri_7">
-        <Fade cascade duration={300}>
-          {t("heading2")}
-        </Fade>
-      </p>
+      <Fade cascade duration={300}>
+        <p className="h2-text font-bold my-5 text-pri_7">{t("heading2")}</p>
+      </Fade>
       <div className="my-5 grid md:grid-cols-3 lg:grid-cols-4 gap-5">
         {why_we_stand_out.map((card) => (
           <div

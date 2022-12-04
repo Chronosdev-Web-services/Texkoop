@@ -21,15 +21,18 @@ div {
 }
 .h1-text {
   font-size: clamp(1.5rem, 2vw + 0.9rem, 4.375rem);
+  font-weight: 700;
 }
 .h2-text {
   font-size: clamp(1.25rem, 1vw + 1rem, 2.25rem);
+  font-weight: 700;
 }
 .h4-text {
   font-size: clamp(1rem, 1vw + 0.6rem, 1.563rem);
 }
 .p-text {
   font-size: clamp(0.938rem, 1vw + 0.6rem, 1.25rem);
+  font-weight: 500;
 }
 .h4-fixed {
   font-size: 18px;
@@ -116,6 +119,12 @@ div {
   -o-animation: up-right 1s infinite;
   animation: up-right 1s infinite;
 }
+@media (max-width: 800px) {
+  .circle {
+    width: 15px;
+    height: 15px;
+  }
+}
 .red {
   position: absolute;
 }
@@ -125,7 +134,9 @@ div {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100%;
+  height: 450px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 60% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 60% 100%, 0% 100%);
 }
 
 /* dots blinking*/
@@ -613,7 +624,56 @@ div {
 }
 
 /*loader */
+/* caarousel*/
 
+.slideshow {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slideshowSlider {
+  white-space: nowrap;
+  transition: ease 1500ms;
+}
+.undo_wrap {
+  white-space: wrap;
+}
+
+.slide {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Buttons */
+/* Slideshow */
+
+.slideshow {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Buttons */
+
+.slideshowDots {
+  text-align: center;
+}
+
+.slideshowDot {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 15px 7px 0px;
+
+  background-color: #c4c4c4;
+}
+
+.slideshowDot.active {
+  background-color: #faa019;
+}
+/* caarousel*/
 /* clip path*/
 .clip {
   clip-path: polygon(0% 0%, 100% 0%, 0% 100%);

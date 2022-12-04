@@ -50,7 +50,7 @@ const Navbar = () => {
               <img
                 src="/icons/logo_black.svg"
                 alt="Texkoop Logo"
-                className="w-[50%] md:w-[30%] lg:hidden"
+                className="w-[90%]  lg:hidden"
               />
             </Link>
             <Link href="/">
@@ -115,7 +115,7 @@ const Navbar = () => {
             <div className="flex">
               <img
                 src={`https://flagcdn.com/w20/${image}.png`}
-                srcset={`https://flagcdn.com/w40/${image}.png 2x`}
+                srcSet={`https://flagcdn.com/w40/${image}.png 2x`}
                 width="30"
                 height="10"
                 alt="Flag of locale"
@@ -134,7 +134,7 @@ const Navbar = () => {
                   <div>
                     <img
                       src="https://flagcdn.com/w20/gb.png"
-                      srcset="https://flagcdn.com/w40/gb.png 2x"
+                      srcSet="https://flagcdn.com/w40/gb.png 2x"
                       width="20"
                       height="10"
                       alt="United Kingdom"
@@ -151,7 +151,7 @@ const Navbar = () => {
                   <div className="">
                     <img
                       src="https://flagcdn.com/w20/fr.png"
-                      srcset="https://flagcdn.com/w40/fr.png 2x"
+                      srcSet="https://flagcdn.com/w40/fr.png 2x"
                       width="20"
                       height="10"
                       alt="France"

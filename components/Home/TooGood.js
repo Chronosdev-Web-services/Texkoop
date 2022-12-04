@@ -1,10 +1,12 @@
 import useTranslation from "next-translate/useTranslation";
 import React from "react";
 import { landing } from "../../utils/data";
+import Carousel_test from "./Carousel";
 
 const TooGood = () => {
   const { too_goood } = landing;
-  const { t, lang } = useTranslation("home");
+  const { t } = useTranslation("home");
+
   return (
     <section className="bg-pri  my-20 mb-52">
       <div className="max-w-[1440px] mx-auto">
@@ -27,20 +29,8 @@ const TooGood = () => {
                 </div>
               ))}
             </div>
-            <div className="w-[80%] ml-auto flex  my-10">
-              <div className="w-[80%]">
-                <p className="p-text">Karim Tabet</p>
-                <p className="my-2 uppercase text-xs">LYON SELECT EKVAL</p>
-                <p className="mt-5 text-base">
-                  Il s'agit d'une jeune entreprise qui a fait preuve de
-                  diligence et de cohérence dans la prestation de ses services.
-                  Ils dépassent toujours les attentes et je suis impressionné
-                  par leurs offres.
-                </p>
-              </div>
-              <div className="w-[20%]">
-                <img src="/images/1/quotes.svg" alt="what they say quotes" />
-              </div>
+            <div className="my-10">
+              <Carousel_test />
             </div>
           </div>
         </div>
