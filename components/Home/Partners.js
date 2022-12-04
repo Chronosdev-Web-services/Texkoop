@@ -45,7 +45,8 @@ const Partners = () => {
               alt="locations of Texkoop on Map"
             />
           </div>
-          <div className="circle  absolute top-1/3 right-1/2 bg-sec"></div>
+
+          <div className="circle  absolute top-1/3 right-1/2 bg-[#F4CC41]"></div>
           <div className="circle  absolute bottom-1/3 left-[67%] bg-[#F4CC41]"></div>
           <div className="circle  absolute bottom-[65%] left-[13%] bg-[#F4CC41]"></div>
           <div className="circle  absolute left-1/3 top-[70%] bg-[#F4CC41]"></div>

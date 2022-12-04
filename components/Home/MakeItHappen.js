@@ -9,15 +9,15 @@ const MakeItHappen = () => {
       <p className="h2-text text-pri my-5 font-bold">{t("happen_head")}</p>
       <Fade cascade damping={0.8}>
         <div className="relative">
-          <div className="md:grid-cols-4 grid md:gap-10 font-bold p-text text-pri">
-            <div>
-              <div className="how_we_do">
+          <div className="  md:grid-cols-4 grid md:gap-10 p-text text-pri">
+            <div className="mx-auto ">
+              <div className="how_we_do ">
                 <img
                   src="/images/1/gi.svg"
                   className="w-full object-containt-contain "
                 />
               </div>
-              <p className="my-3 md:text-center">{t("happen_1")}</p>
+              <p className="font-bold my-3 text-center">{t("happen_1")}</p>
             </div>
             <div>
               <div className="">
@@ -27,11 +27,11 @@ const MakeItHappen = () => {
                 />
               </div>
             </div>
-            <div>
+            <div className="mx-auto">
               <div className="how_we_do">
                 <img src="/images/1/gii.svg" className="w-full  " />
               </div>
-              <p className="my-3 md:text-center">{t("happen_2")}</p>
+              <p className="font-bold my-3 text-center">{t("happen_2")}</p>
             </div>
 
             {/* side arrow  */}
@@ -45,14 +45,14 @@ const MakeItHappen = () => {
             {/* side arrow  */}
             {/* second row */}
 
-            <div>
+            <div className="mx-auto">
               <div className="how_we_do">
                 <img
                   src="/images/1/giii.svg"
                   className="w-full object-containt-contain "
                 />
               </div>
-              <p className="my-3 md:text-center">{t("happen_3")}</p>
+              <p className="font-bold my-3 text-center">{t("happen_3")}</p>
             </div>
             <div>
               <div className="">
@@ -63,11 +63,11 @@ const MakeItHappen = () => {
               </div>
               <p className=""></p>
             </div>
-            <div>
+            <div className="mx-auto">
               <div className="how_we_do">
                 <img src="/images/1/giv.svg" className="w-full  " />
               </div>
-              <p className="my-3 md:text-center">{t("happen_4")}</p>
+              <p className="font-bold my-3 text-center">{t("happen_4")}</p>
             </div>
           </div>
         </div>

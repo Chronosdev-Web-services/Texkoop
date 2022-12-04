@@ -41,7 +41,7 @@ const Carousel_test = () => {
                   <div className="">
                     <img
                       src="/images/1/f.svg"
-                      className="w-[100px] h-[100px] rounded-[50%] object-cover"
+                      className="w-[50px] h-[50px] md:w-[100px] md:h-[100px] rounded-[50%] object-cover"
                       alt="testimonial picture"
                     />
                   </div>
@@ -54,7 +54,11 @@ const Carousel_test = () => {
                   </p>
                 </div>
                 <div className="">
-                  <img src="/images/1/quotes.svg" alt="what they say quotes" />
+                  <img
+                    src="/images/1/quotes.svg"
+                    alt="what they say quotes"
+                    className="w-[50%]"
+                  />
                 </div>
               </div>
             </div>
@@ -66,7 +70,9 @@ const Carousel_test = () => {
         {colors.map((_, idx) => (
           <div
             key={idx}
-            className={`slideshowDot${index === idx ? " active" : ""}`}
+            className={`slideshowDot h-[15px] w-[15px] md:h-[20px] md:w-[20px]${
+              index === idx ? " active" : ""
+            }`}
             onClick={() => {
               setIndex(idx);
             }}
@@ -78,26 +84,3 @@ const Carousel_test = () => {
 };
 
 export default Carousel_test;
-// {
-//   testimonial.map((item) => (
-//     <div className="flex gap-5" key={item.id}>
-//       <div className="w-[20%]">
-//         <div className="">
-//           <img
-//             src="/images/1/f.svg"
-//             className="w-[100px] h-[100px] rounded-[50%] object-cover"
-//             alt="testimonial picture"
-//           />
-//         </div>
-//       </div>
-//       <div className="w-[60%]">
-//         <p className="p-text">{item.name}</p>
-//         <p className="my-2 uppercase text-xs">{item.title}</p>
-//         <p className="mt-5 text-base">{item.text}</p>
-//       </div>
-//       <div className="w-[15%]">
-//         <img src="/images/1/quotes.svg" alt="what they say quotes" />
-//       </div>
-//     </div>
-//   ));
-// }

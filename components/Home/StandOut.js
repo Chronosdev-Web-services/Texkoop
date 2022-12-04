@@ -19,12 +19,13 @@ const StandOut = () => {
             className="px-5 py-3 grid gap-5 hover:bg-sec transition"
           >
             <div>
-              <img
+              <Image
                 src={card.image}
                 alt="how we stand out"
                 className="w-full object-cover"
                 width="100"
                 height="100"
+                priority
               />
             </div>
             <Fade cascade damping={0.4}>

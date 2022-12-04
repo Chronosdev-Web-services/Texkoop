@@ -5,9 +5,9 @@ import Button from "../Reusable/Button";
 const DayIn = () => {
   const { t, lang } = useTranslation("home");
   return (
-    <section className=" text-white bg-sec ">
+    <section className=" text-white bg-sec md:mb-[300px]">
       <div className="day_in  ">
-        <div className="max-w-[1440px] mx-auto ">
+        <div className="container mx-auto ">
           <div className="py-10">
             <div className="mx-auto w-[80%] pt-10">
               <p className="h2-text font-bold">{t("day_head")}</p>
