@@ -87,7 +87,7 @@ div {
   width: 100%;
   height: 100%;
 }
-/* @keyframes up-right {
+@keyframes up-right {
   0% {
     transform: scale(0.9);
     opacity: 0.25;
@@ -104,7 +104,8 @@ div {
     transform: scale(1);
     opacity: 0.25;
   }
-} */
+}
+
 .circle {
   border-radius: 50%;
   width: 20px;
@@ -128,6 +129,11 @@ div {
 }
 
 /* dots blinking*/
+
+.card_:hover button {
+  background: #1c2f50;
+  color: #eead30;
+}
 
 /*buttons*/
 .btn-21,
@@ -165,7 +171,6 @@ div {
   display: none;
 }
 .btn-21 {
-  padding: 0.2rem 1rem;
   position: relative;
 }
 .btn-21 span {
