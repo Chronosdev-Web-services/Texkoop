@@ -56,7 +56,7 @@ export const landing = {
     },
     {
       id: 5,
-      image: "/images/1/cv.svg",
+      image: "/images/1/cv.png",
       head: "card2_e_head",
       text: "card2_e_text",
     },
