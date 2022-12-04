@@ -3,6 +3,31 @@ import React, { useState } from "react";
 import Button from "../Reusable/Button";
 
 const RideForm = () => {
+  const createRider = async (form_values)=>{
+    
+    const rider = await fetch(`/api/forms/rider/`, {
+      method: "POST",
+
+      headers: {
+        Accept: "application/json",
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(form_values),
+    })
+    //it returns status of 201 if it was successfull and 400 if not successfull
+    console.log("response status", rider.status)
+      
+
+  }
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    var formData = new FormData(e.target);
+
+    const form_values = Object.fromEntries(formData);
+    createRider(form_values)
+
+  }
   const { t } = useTranslation("partner");
   const [form, setForm] = useState({
     f_name: "",
@@ -28,13 +53,14 @@ const RideForm = () => {
   };
 
   return (
-    <form className=" grid md:grid-cols-2 gap-5 my-10">
+    <form onSubmit={submitHandler} className=" grid md:grid-cols-2 gap-5 my-10">
       <div>
         <label className="py-2">
           {t("f_name")} <span className="text-red-600">*</span>
         </label>
         <input
           type="text"
+          name="first_name"
           value={name}
           onChange={(e) => setName(e.target.value)}
           onBlur={() => setTouched(true)}
@@ -48,6 +74,7 @@ const RideForm = () => {
           <span className="text-red-600">*</span>
         </label>
         <input
+        name="last_name"
           type="text"
           value={form.l_name}
           onChange={(e) => UpdateField(e, l_name)}
@@ -59,7 +86,7 @@ const RideForm = () => {
           {t("city")}
           <span className="text-red-600 ">*</span>
         </label>
-        <select className=" w-full p-3 outline-none border-white bg-transparent border">
+        <select name="city" className=" w-full p-3 outline-none border-white bg-transparent border">
           <option>Marseille</option>{" "}
         </select>
       </div>
@@ -68,6 +95,7 @@ const RideForm = () => {
           {t("email")} <span className="text-red-600">*</span>
         </label>
         <input
+        name="email"
           type="email"
           value={form.email}
           onChange={(e) => UpdateField(e, email)}
@@ -79,6 +107,7 @@ const RideForm = () => {
           {t("number")} <span className="text-red-600">*</span>
         </label>
         <input
+        name="telephone_number"
           type="text"
           value={form.number}
           onChange={(e) => UpdateField(e, number)}
