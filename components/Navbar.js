@@ -44,7 +44,7 @@ const Navbar = () => {
     <div className={` sticky  z-10 w-full top-0 ${navOpen && "bg-white"}`}>
       {!navOpen && <div className="header_class "></div>}
       <nav className="max-w-[1440px] w-[90%] flex lg:h-auto flex-col lg:flex-row  py-4 lg:py-7 lg:items-center font-[600] z-10 lg:text-white mx-auto">
-        <div className="flex relative z-20 lg:block items-center w-full lg:w-auto">
+        <div className="flex justify-between relative z-20 lg:block items-center w-full lg:w-auto">
           <div className=" max-w-[200px]">
             <Link href="/">
               <img
@@ -121,7 +121,7 @@ const Navbar = () => {
                 alt="Flag of locale"
               />
             </div>
-            <p>{router.locale}</p>
+            <p>{name}</p>
             <div
               className={`dropdown_list slide-up border text-black space-y-3 rounded-md shadow-xl p-3 absolute left-[-20px] top-5 bg-white`}
             >
@@ -140,7 +140,7 @@ const Navbar = () => {
                       alt="United Kingdom"
                     />
                   </div>
-                  English
+                  <p>En</p>
                 </Link>
 
                 <Link
@@ -157,7 +157,7 @@ const Navbar = () => {
                       alt="France"
                     />
                   </div>
-                  <p>Français</p>
+                  <p>Fr</p>
                 </Link>
               </div>
             </div>
