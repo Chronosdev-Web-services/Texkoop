@@ -11,7 +11,7 @@ const services = () => {
   const { t } = useTranslation("services");
   return (
     <Layout title="Services">
-      <section className="w-full relative h-[600px]">
+      <section className="w-full relative h-[70vh]">
         <Image
           src="/images/5/5a.svg"
           quality={100}
@@ -23,7 +23,7 @@ const services = () => {
             objectFit: "cover",
           }}
         />
-        <div className="absolute top-1/2 -translate-y-1/2 w-full ">
+        <div className="absolute top-1/2 translate-y-1/2 w-full ">
           <div className=" max-w-[1440px]  text-white w-[90%] mx-auto">
             <div className="mx-10">
               <p className="h1-text font-bold">

@@ -6,13 +6,14 @@ import Button from "../Reusable/Button";
 const BestDo = () => {
   const { t } = useTranslation("services");
   return (
-    <section className="w-full relative h-[600px] my-10">
+    <section className="w-full relative h-[70vh] my-10">
       <Image
         src="/images/5/5c.svg"
         quality={100}
         fill
         alt="Texkoop delivery lady"
         sizes="100vw"
+        className="h-[70vh]"
         style={{
           objectFit: "cover",
         }}

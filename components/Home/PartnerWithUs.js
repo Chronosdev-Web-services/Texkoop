@@ -34,7 +34,7 @@ const PartnerWithUs = () => {
         <Image
           src={man}
           alt="delivery woman"
-          className="absolute bottom-0 right-1/3 translate-x-1/2 z-10 hidden w-[40%] lg:w-[20%] md:block"
+          className="absolute bottom-0 right-1/3 translate-x-1/2 z-10 hidden w-[40%] lg:w-[35%] md:block"
         />
       </div>
     </section>
