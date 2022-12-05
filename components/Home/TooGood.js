@@ -25,7 +25,7 @@ const TooGood = () => {
           </div>
           <div className="my-10">
             <p className="h2-text font-bold">Too Good to be True</p>
-            <div className="grid grid-cols-2 mt-5 gap-3">
+            <div className="grid md:grid-cols-2 mt-5 gap-3">
               {too_goood.map((data) => (
                 <div
                   key={data.id}

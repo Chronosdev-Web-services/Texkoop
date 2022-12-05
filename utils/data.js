@@ -83,22 +83,42 @@ export const landing = {
     {
       id: 1,
       alt: "isoWatt",
-      image: "/images/1/logo_1.svg",
+      image: "/images/logo/logo_1.svg",
     },
     {
       id: 2,
       alt: "Agg print",
-      image: "/images/1/logo_2.svg",
+      image: "/images/logo/logo_2.svg",
     },
     {
       id: 3,
       alt: "Soleil Vert",
-      image: "/images/1/logo_3.svg",
+      image: "/images/logo/logo_3.svg",
     },
     {
       id: 4,
       alt: "Eleclerc",
-      image: "/images/1/logo_4.svg",
+      image: "/images/logo/logo_4.svg",
+    },
+    {
+      id: 5,
+      alt: "Eleclerc",
+      image: "/images/logo/logo_5.svg",
+    },
+    {
+      id: 6,
+      alt: "Eleclerc",
+      image: "/images/logo/logo_6.svg",
+    },
+    {
+      id: 7,
+      alt: "Eleclerc",
+      image: "/images/logo/logo_7.svg",
+    },
+    {
+      id: 8,
+      alt: "Eleclerc",
+      image: "/images/logo/logo_8.svg",
     },
   ],
   too_goood: [

@@ -1,12 +1,10 @@
 import useTranslation from "next-translate/useTranslation";
-import Image from "next/image";
 import React from "react";
 import { Fade } from "react-awesome-reveal";
-import { landing } from "../../utils/data";
+import LogoScroll from "./LogoScroll";
 
 const Partners = () => {
   const { t, lang } = useTranslation("home");
-  const { logos } = landing;
 
   return (
     <section className="my-20 w-[90%] mx-auto max-w-[1440px] grid md:grid-cols-2 ">
@@ -16,25 +14,6 @@ const Partners = () => {
             {t("local_businesses")}
           </p>
         </Fade>
-        <div className="flex md:animate-slide2  mt-4 overflow-hidden">
-          {logos.map((logo) => (
-            <div
-              key={logo.id}
-              className=" md:w-[350px]  ml-[10px]  hover:scale-110 transition-transform"
-            >
-              <div>
-                <img
-                  src={logo.image}
-                  alt={logo.alt}
-                  className=""
-                  width="350"
-                  height="250"
-                  layout="responsive"
-                />
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
       <div>
         <div className="relative">
