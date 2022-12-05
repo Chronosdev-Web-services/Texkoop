@@ -14,7 +14,7 @@ const RideWithUs = () => {
       <div className="bg-pri relative">
         <div className="clip w-[100px] h-[100px] top-0 left-0 absolute bg-sec"></div>
         <div className="mx-auto max-w-[1440px] grid md:grid-cols-2">
-          <div className="text-white w-[80%] mx-auto my-5">
+          <div className="text-white w-[90%] lg:w-[80%] mx-auto my-20">
             <p className="h2-text font-bold">{t("ride_head")}</p>
             <p className="p-text">{t("ride_text")}</p>
             <RideForm />

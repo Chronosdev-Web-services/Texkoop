@@ -11,7 +11,7 @@ const partner = () => {
   const { t } = useTranslation("partner");
   return (
     <Layout title="partners/join us/career">
-      <section className="w-full relative h-screen">
+      <section className="w-full relative h-[70vh]">
         <Image
           src="/images/3/3a.svg"
           quality={100}

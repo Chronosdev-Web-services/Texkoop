@@ -18,7 +18,7 @@ const PartnerWithUs = () => {
                 <p className="uppercase text-sec nav-text">
                   {t("partner_top")}
                 </p>
-                <Slide duration={5000}>
+                <Slide duration={1000}>
                   <p className="h2-text font-bold">{t("location_text")}</p>
                 </Slide>
 

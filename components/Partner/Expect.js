@@ -1,6 +1,7 @@
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import React from "react";
+import { Fade } from "react-awesome-reveal";
 import { partner } from "../../utils/data";
 
 const Expect = () => {
@@ -8,9 +9,11 @@ const Expect = () => {
   const { t } = useTranslation("partner");
   return (
     <section className="mx-auto max-w-[1440px] w-[90%] my-10">
-      <p className="h2-text md:w-1/2 font-bold">{t("expect_head")}</p>
-      <p className="p-text w-1/2">{t("expect_text")} </p>
-      <div className="grid my-5 md: grid-cols-3 lg:gap-32 gap-10">
+      <Fade cascade>
+        <p className="h2-text md:w-1/2 font-bold">{t("expect_head")}</p>
+        <p className="p-text w-1/2">{t("expect_text")} </p>
+      </Fade>{" "}
+      <div className="grid my-5 md:grid-cols-3 xl:gap-20 gap-10">
         {what_can_you_expect.map((card) => (
           <div
             key={card.id}
@@ -25,8 +28,10 @@ const Expect = () => {
                 height="50"
               />
             </div>
-            <p className="text-lg font-bold ">{t(card.head)}</p>
-            <p className="text-sm">{t(card.text)}</p>
+            <Fade cascade damping={0.4}>
+              <p className="h4-text font-bold ">{t(card.head)}</p>
+              <p className="p-text">{t(card.text)}</p>
+            </Fade>
           </div>
         ))}
       </div>

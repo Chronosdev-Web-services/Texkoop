@@ -32,8 +32,12 @@ const services = () => {
                   <Fade cascade duration={300}>
                     {t("hero_headi")}
                   </Fade>
+                  <br></br>
+                  <Fade cascade delay={700} duration={300}>
+                    {t("hero_headii")}
+                  </Fade>
                 </div>
-                <Fade delay={2500}>
+                <Fade delay={2000}>
                   <p className="h2-text font-semibold">{t("hero_text")}</p>
                 </Fade>
               </div>

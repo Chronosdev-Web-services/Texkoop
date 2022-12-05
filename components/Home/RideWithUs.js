@@ -10,7 +10,7 @@ const RideWithUs = () => {
   const { t, lang } = useTranslation("home");
   return (
     <section className=" bg-pri relative">
-      <div className="hidden lg:block clip2 w-[100px] h-[100px] md:w-[200px] md:h-[200px] top-0 right-0 absolute bg-sec"></div>
+      <div className="hidden lg:block clip2 w-[100px] h-[100px]   top-0 right-0 absolute bg-sec"></div>
       <div className="max-w-[1440px] mx-auto grid md:grid-cols-2 h-[80%]">
         <div className=" relative">
           <Image

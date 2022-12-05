@@ -29,7 +29,7 @@ const Footer = () => {
                 width="100"
                 height="150"
                 layout="responsive"
-                className="object-contain w-[70%]"
+                className="object-contain w-[50%] md:w-[70%]"
               />
             </div>
 
