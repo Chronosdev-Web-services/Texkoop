@@ -8,9 +8,9 @@ const Partners = () => {
 
   return (
     <section className=" w-[90%] mx-auto max-w-[1440px] grid md:grid-cols-2 ">
-      <div className=" flex flex-col gap-10 justify-center">
+      <div className=" flex flex-col gap-10 mt-20">
         <Fade>
-          <p className="md:w-[90%] h1-text text-pri_7 font-bold ">
+          <p className="md:w-[90%] h2-text text-pri_7 font-bold ">
             {t("local_businesses")}
           </p>
         </Fade>

@@ -6,7 +6,7 @@ import Link from "next/link";
 const DayIn = () => {
   const { t, lang } = useTranslation("home");
   return (
-    <section className=" text-white bg-sec md:mb-[300px]">
+    <section className=" text-white bg-sec md:my-40 md:mb-60">
       <div className="day_in  ">
         <div className="container mx-auto ">
           <div className="py-10">

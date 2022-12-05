@@ -38,7 +38,7 @@ const NewLocation = () => {
           <Image
             src={bike}
             alt="bike man on helmet"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover md:absolute"
             priority
           />
         </div>

@@ -10,7 +10,7 @@ const TooGood = () => {
   const { t } = useTranslation("home");
 
   return (
-    <section className="bg-pri  my-20 lg:mb-60">
+    <section className="bg-pri  my-40 lg:mb-60">
       <div className="container mx-auto">
         <div className=" w-[90%] mx-auto text-white grid lg:grid-cols-2">
           <div className="relative">

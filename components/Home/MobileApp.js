@@ -6,7 +6,7 @@ import { Fade } from "react-awesome-reveal";
 const MobileApp = () => {
   const { t, lang } = useTranslation("home");
   return (
-    <section className="container mx-auto mt-20 w-[90%]">
+    <section className="container mx-auto my-20 w-[90%]">
       <div className="grid md:grid-cols-2">
         <div className="grid gap-5 gap-y-5 my-10 md:w-[80%]">
           <Fade cascade damping={0.4}>
