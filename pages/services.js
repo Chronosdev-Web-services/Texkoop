@@ -26,14 +26,18 @@ const services = () => {
         />
         <div className="absolute top-1/2 -translate-y-1/2 w-full ">
           <div className=" max-w-[1440px]  text-white w-[90%] mx-auto ">
-            <div className="">
-              <div className="h1-text font-bold ">
-                <Fade cascade duration={1000}>
-                  {t("hero_headi")}
+            <Fade cascade>
+              <div className="">
+                <div className="h1-text font-bold ">
+                  <Fade cascade duration={300}>
+                    {t("hero_headi")}
+                  </Fade>
+                </div>
+                <Fade delay={2500}>
+                  <p className="h2-text font-semibold">{t("hero_text")}</p>
                 </Fade>
               </div>
-              <p className="h4-text font-semibold">{t("hero_text")}</p>
-            </div>
+            </Fade>
           </div>
         </div>
       </section>

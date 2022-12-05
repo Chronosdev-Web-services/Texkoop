@@ -1,6 +1,8 @@
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+import { Fade } from "react-awesome-reveal";
 import Button from "../Reusable/Button";
 
 const BestDo = () => {
@@ -21,9 +23,17 @@ const BestDo = () => {
       <div className="absolute top-1/2 -translate-y-1/2 w-full ">
         <div className=" max-w-[1440px]  text-white w-[90%] mx-auto">
           <div className="mx-10">
-            <p className="h1-text font-bold">{t("wedo_head")}</p>
-            <p className="h2-text w-[70%]">{t("wedo_text")}</p>
-            <Button text={t("button")} className="capitalize" />
+            <div className="h1-text font-bold">
+              <Fade cascade duration={300}>
+                {t("wedo_head")}
+              </Fade>
+            </div>
+            <Fade delay={2500}>
+              <p className="h2-text w-[70%] mb-10 mt-5">{t("wedo_text")}</p>
+            </Fade>
+            <Link href="/partner">
+              <Button text={t("button")} className="capitalize" />
+            </Link>
           </div>
         </div>
       </div>

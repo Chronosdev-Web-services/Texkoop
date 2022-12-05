@@ -24,7 +24,7 @@ html {
   scroll-behavior: smooth;
 }
 .h1-text {
-  font-size: clamp(1.5rem, 2vw + 0.9rem, 4.375rem);
+  font-size: clamp(1.875rem, 2vw + 2.4rem, 4.375rem);
   font-weight: 700;
 }
 .h2-text {
