@@ -9,9 +9,9 @@ const OptimalServices = () => {
   const { t } = useTranslation("services");
   return (
     <section className="my-10 max-w-[1440px] mx-auto w-[90%]">
-      <div className="my-5 w-[60%]">
+      <div className="my-5 md:w-[60%]">
         <p className="h2-text font-bold">{t("second_head")}</p>
-        <p className="p-text">{t("second_text")}</p>
+        <p className="p-text my-5">{t("second_text")}</p>
         <Button text={t("button")} className="capitalize" />
       </div>
       <div className="my-10 grid md:grid-cols-2 gap-10">

@@ -31,7 +31,7 @@ const Delivery = () => {
                 <p className="h4-text font-bold mb-5">{t(data.head)}</p>
                 <p className="text-base">{t(data.text)}</p>
               </div>
-              <div className="grid grid-cols-2 gap-10">
+              <div className="grid md:grid-cols-2 gap-10">
                 <div className=" my-10 ">
                   <p className="h4-text font-bold mb-5">{t("scenario")}</p>
                   <p className="text-base">{t(data.scenario)}</p>

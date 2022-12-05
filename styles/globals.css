@@ -1,11 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Red+Rose:wght@300;400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
 }
 html,
 body,
@@ -35,7 +36,6 @@ html {
 }
 .p-text {
   font-size: clamp(0.938rem, 1vw + 0.6rem, 1.25rem);
-  font-weight: 500;
 }
 .h4-fixed {
   font-size: 18px;
@@ -145,7 +145,10 @@ html {
   }
 }
 /* d*/
-
+.map_container {
+  width: 100%;
+  height: 400px;
+}
 .red {
   position: absolute;
 }

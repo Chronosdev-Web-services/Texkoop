@@ -1,6 +1,7 @@
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import React from "react";
+import { Fade } from "react-awesome-reveal";
 import MobileApp from "../components/Home/MobileApp";
 import Layout from "../components/Layout";
 import BestDo from "../components/Services/BestDo";
@@ -23,15 +24,15 @@ const services = () => {
             objectFit: "cover",
           }}
         />
-        <div className="absolute top-1/2 translate-y-1/2 w-full ">
-          <div className=" max-w-[1440px]  text-white w-[90%] mx-auto">
-            <div className="mx-10">
-              <p className="h1-text font-bold">
-                {t("hero_headi")}
-                <br></br>
-                {t("hero_headii")}
-              </p>
-              <p className="h2-text">{t("hero_text")}</p>
+        <div className="absolute top-1/2 -translate-y-1/2 w-full ">
+          <div className=" max-w-[1440px]  text-white w-[90%] mx-auto ">
+            <div className="">
+              <div className="h1-text font-bold ">
+                <Fade cascade duration={1000}>
+                  {t("hero_headi")}
+                </Fade>
+              </div>
+              <p className="h4-text font-semibold">{t("hero_text")}</p>
             </div>
           </div>
         </div>
