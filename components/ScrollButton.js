@@ -26,7 +26,7 @@ const ScrollButton = () => {
     <button
       onClick={scrollToTop}
       style={{ display: visible ? "inline " : "none" }}
-      className={`fixed scroll-smooth w-[50px] h-[50px] right-[20px] bottom-[50vh] cursor-pointer bg-sec rounded-[50%] z-30 `}
+      className={`fixed duration-1000 scroll-smooth w-[50px] h-[50px] right-[20px] bottom-[50vh] cursor-pointer bg-sec rounded-[50%] z-30 `}
     >
       <BsArrowUp
         className="z-30"

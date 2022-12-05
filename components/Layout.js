@@ -1,8 +1,14 @@
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import Head from "next/head";
-import ScrollButton from "./ScrollButton";
 
+import dynamic from "next/dynamic";
+const ScrollButton = dynamic(
+  () => {
+    return import("../components/ScrollButton");
+  },
+  { ssr: false }
+);
 const Layout = ({ children, title }) => {
   return (
     <>
