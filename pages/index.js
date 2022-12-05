@@ -9,6 +9,7 @@ import DayIn from "../components/Home/DayIn";
 import TooGood from "../components/Home/TooGood";
 import PartnerWithUs from "../components/Home/PartnerWithUs";
 import MobileApp from "../components/Home/MobileApp";
+import LogoScroll from "../components/Home/LogoScroll";
 
 export default function Home() {
   return (
@@ -23,11 +24,11 @@ export default function Home() {
           ></video>
         </div>
       </div>
-
       <Delivery />
       <StandOut />
       <NewLocation />
       <Partners />
+      <LogoScroll />
       <RideWithUs />
       <MakeItHappen />
       <DayIn />

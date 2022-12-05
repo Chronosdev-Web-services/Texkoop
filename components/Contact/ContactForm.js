@@ -35,10 +35,13 @@ const ContactForm = () => {
 
   const { t } = useTranslation();
   return (
-    <section className="lg:w-[80%] mx-auto max-w-[1440px]">
-      <form onSubmit={submitHandler} className=" grid md:grid-cols-2 gap-5 my-10 capitalize">
-        <div>
-          <label className="py-2">
+    <section className="w-[90%] lg:w-[80%] mx-auto max-w-[1440px]">
+      <form onSubmit={submitHandler} className=" md:grid md:grid-cols-2 gap-5 gap-y-5 my-10 capitalize">
+        
+    
+      
+        <div className="my-5 md:my-0">
+          <label className="py-2 p-text font-bold  ">
             {t("partner:f_name")} <span className="text-red-600">*</span>
           </label>
           <input
@@ -48,8 +51,8 @@ const ContactForm = () => {
             className="w-full p-3 outline-none border-black border"
           />
         </div>
-        <div>
-          <label className="">
+        <div className="my-5 md:my-0">
+          <label className="p-text font-bold  ">
             {t("partner:l_name")}
             <span className="text-red-600">*</span>
           </label>
@@ -60,8 +63,8 @@ const ContactForm = () => {
             className="w-full p-3 outline-none border-black border"
           />
         </div>
-        <div className="">
-          <label className="">
+        <div className="my-5 md:my-0">
+          <label className="p-text font-bold  ">
             {t("partner:number")} <span className="text-red-600">*</span>
           </label>
           <input
@@ -71,8 +74,8 @@ const ContactForm = () => {
             className="w-full p-3 outline-none border-black border"
           />
         </div>
-        <div className="">
-          <label className="">
+        <div className="my-5 md:my-0">
+          <label className="p-text font-bold  ">
             {t("partner:email")} <span className="text-red-600">*</span>
           </label>
           <input
@@ -82,8 +85,8 @@ const ContactForm = () => {
             className="w-full p-3 outline-none border-black border"
           />
         </div>
-        <div className="col-span-2">
-          <label className="">
+        <div className="col-span-2 my-5 md:my-0">
+          <label className="p-text font-bold  ">
             {t("partner:message")} <span className="text-red-600">*</span>
           </label>
           <textarea

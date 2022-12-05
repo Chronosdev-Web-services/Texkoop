@@ -10,7 +10,7 @@ const contact = () => {
 
   return (
     <Layout title="Contact Us">
-      <section className="w-full relative h-[500px]">
+      <section className="w-full relative h-[70vh]">
         <Image
           src="/images/4/4.svg"
           quality={100}
@@ -21,12 +21,13 @@ const contact = () => {
           }}
         />
       </section>
-      <section className="w-[90%] max-w-[1440px] mx-auto">
-        <GoogleMapComponent />
-      </section>
-      <section className="w-[90%] mx-auto max-w-[1440px] my-10">
+
+      <section className="w-[90%] md:w-[80%] mx-auto max-w-[1440px] my-10">
         <p className="h2-text font-bold w-1/2">{t("contact_head")}</p>
         <p className="p-text w-1/2">{t("contact_text")}</p>
+        <div className="my-10">
+          <GoogleMapComponent />
+        </div>
       </section>
 
       <ContactForm />

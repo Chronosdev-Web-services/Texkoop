@@ -43,14 +43,14 @@ const Navbar = () => {
   return (
     <div className={` sticky  z-10 w-full top-0 ${navOpen && "bg-white"}`}>
       {!navOpen && <div className="header_class "></div>}
-      <nav className="max-w-[1440px] w-[90%] flex lg:h-auto flex-col lg:flex-row  py-4 lg:py-7 lg:items-center font-[600] z-10 lg:text-white mx-auto">
-        <div className="flex relative z-20 lg:block items-center w-full lg:w-auto">
+      <nav className="max-w-[1440px] w-[90%] z-20 flex lg:h-auto flex-col lg:flex-row  py-4 lg:py-7 lg:items-center font-[600] lg:text-white mx-auto">
+        <div className="flex justify-between relative z-20 lg:block items-center w-full lg:w-auto">
           <div className=" max-w-[200px]">
             <Link href="/">
               <img
                 src="/icons/logo_black.svg"
                 alt="Texkoop Logo"
-                className="w-[50%] md:w-[30%] lg:hidden"
+                className="w-[90%]  lg:hidden"
               />
             </Link>
             <Link href="/">
@@ -107,21 +107,21 @@ const Navbar = () => {
               <p>{t("Nav4")}</p>
             </Link>
           </div>
-          <div className=" -auto">
+          <Link href="/partner">
             <Button text={t("Nav5")} />
-          </div>
+          </Link>
 
           <div className={`dropdown px-1 space-x-3 relative middle flex`}>
             <div className="flex">
               <img
                 src={`https://flagcdn.com/w20/${image}.png`}
-                srcset={`https://flagcdn.com/w40/${image}.png 2x`}
+                srcSet={`https://flagcdn.com/w40/${image}.png 2x`}
                 width="30"
                 height="10"
                 alt="Flag of locale"
               />
             </div>
-            <p>{router.locale}</p>
+            <p>{name}</p>
             <div
               className={`dropdown_list slide-up border text-black space-y-3 rounded-md shadow-xl p-3 absolute left-[-20px] top-5 bg-white`}
             >
@@ -134,13 +134,13 @@ const Navbar = () => {
                   <div>
                     <img
                       src="https://flagcdn.com/w20/gb.png"
-                      srcset="https://flagcdn.com/w40/gb.png 2x"
+                      srcSet="https://flagcdn.com/w40/gb.png 2x"
                       width="20"
                       height="10"
                       alt="United Kingdom"
                     />
                   </div>
-                  English
+                  <p>En</p>
                 </Link>
 
                 <Link
@@ -151,13 +151,13 @@ const Navbar = () => {
                   <div className="">
                     <img
                       src="https://flagcdn.com/w20/fr.png"
-                      srcset="https://flagcdn.com/w40/fr.png 2x"
+                      srcSet="https://flagcdn.com/w40/fr.png 2x"
                       width="20"
                       height="10"
                       alt="France"
                     />
                   </div>
-                  <p>Français</p>
+                  <p>Fr</p>
                 </Link>
               </div>
             </div>
