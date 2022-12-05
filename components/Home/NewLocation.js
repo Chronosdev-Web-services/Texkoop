@@ -4,6 +4,7 @@ import React from "react";
 import { Fade } from "react-awesome-reveal";
 import Button from "../Reusable/Button";
 import bike from "../../public/images/3/3b.svg";
+import Link from "next/link";
 
 const NewLocation = () => {
   const { t, lang } = useTranslation("home");
@@ -15,7 +16,6 @@ const NewLocation = () => {
           <div className="w-[80%] ">
             <div className="  md:[w-90%] text-white mt-auto grid gap-5 my-10">
               <Fade cascade damping={0.4}>
-                {" "}
                 <p className="uppercase text-sec nav-text mt-20">
                   {t("location_top")} ?
                 </p>
@@ -27,7 +27,9 @@ const NewLocation = () => {
                 <p className="my-5">{t("location_text")}</p>
               </Fade>
               <div>
-                <Button text={t("location_button")} />
+                <Link href="/partner">
+                  <Button text={t("location_button")} />
+                </Link>
               </div>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import useTranslation from "next-translate/useTranslation";
 import Button from "../Reusable/Button";
+import Link from "next/link";
 
 const DayIn = () => {
   const { t, lang } = useTranslation("home");
@@ -12,7 +13,9 @@ const DayIn = () => {
             <div className="mx-auto w-[80%] pt-10">
               <p className="h2-text font-bold">{t("day_head")}</p>
               <p className="p-small-text my-5 w-[70%]">{t("day_text")}</p>
-              <Button text={t("common:Nav5")} className="mb-5" />
+              <Link href="/partner">
+                <Button text={t("common:Nav5")} className="mb-5" />
+              </Link>
             </div>
           </div>
           <div></div>

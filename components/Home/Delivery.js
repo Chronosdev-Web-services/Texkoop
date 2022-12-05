@@ -1,5 +1,6 @@
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import { landing } from "../../utils/data";
@@ -47,7 +48,9 @@ const Delivery = () => {
                 <p className="p-text">{t(card.text)}</p>
               </Fade>
               <div className="flex justify-end">
-                <Button text={t("card_button")} className=".button" />
+                <Link href="/partner">
+                  <Button text={t("card_button")} className=".button" />
+                </Link>
               </div>
             </div>
           </div>

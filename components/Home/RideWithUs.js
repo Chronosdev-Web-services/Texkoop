@@ -4,6 +4,7 @@ import React from "react";
 import { Fade } from "react-awesome-reveal";
 import Button from "../Reusable/Button";
 import bike from "../../public/images/1/f.svg";
+import Link from "next/link";
 
 const RideWithUs = () => {
   const { t, lang } = useTranslation("home");
@@ -33,7 +34,9 @@ const RideWithUs = () => {
               </p>
             </Fade>
             <div>
-              <Button text={t("ride_button")} />
+              <Link href="/partner">
+                <Button text={t("ride_button")} />
+              </Link>
             </div>
           </div>
         </div>

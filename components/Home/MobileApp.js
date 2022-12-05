@@ -10,7 +10,6 @@ const MobileApp = () => {
       <div className="grid md:grid-cols-2">
         <div className="grid gap-5 gap-y-5 my-10 md:w-[80%]">
           <Fade cascade damping={0.4}>
-            {" "}
             <p className="h2-text font-bold">{t("app_head_i")}</p>
             <p className="font-medium p-text">
               {t("app_text_i")}

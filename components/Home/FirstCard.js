@@ -1,9 +1,10 @@
-import React from 'react';
-import useTranslation from 'next-translate/useTranslation';
-import Button from '../Reusable/Button';
+import React from "react";
+import useTranslation from "next-translate/useTranslation";
+import Button from "../Reusable/Button";
+import Link from "next/link";
 
 const FirstCard = (card) => {
-  const { t } = useTranslation('home');
+  const { t } = useTranslation("home");
   return (
     <div className="h-auto w-full">
       <img src={card.image} alt={card.nav} className="w-full object-cover" />
@@ -12,7 +13,9 @@ const FirstCard = (card) => {
         <p className="h4-text font-bold">{t(card.head)}</p>
         <p className="p-text">{t(card.text)}</p>
         <div className="flex justify-end">
-          <Button text={t('card_button')} />
+          <Link href="/partner">
+            <Button text={t("card_button")} />
+          </Link>
         </div>
       </div>
     </div>

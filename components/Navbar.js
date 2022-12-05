@@ -107,9 +107,9 @@ const Navbar = () => {
               <p>{t("Nav4")}</p>
             </Link>
           </div>
-          <div className=" -auto">
+          <Link href="/partner">
             <Button text={t("Nav5")} />
-          </div>
+          </Link>
 
           <div className={`dropdown px-1 space-x-3 relative middle flex`}>
             <div className="flex">
