@@ -18,7 +18,7 @@ const MobileApp = () => {
             </p>
             <p className="h2-text font-bold">{t("app_head_ii")}</p>
           </Fade>
-          <div className="md:flex md:justify-around hidden ">
+          <div className="md:flex gap-10 hidden ">
             <Image
               src="/images/1/google_store.svg"
               alt="get on Google Store"

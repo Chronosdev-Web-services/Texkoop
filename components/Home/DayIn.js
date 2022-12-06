@@ -10,7 +10,7 @@ const DayIn = () => {
       <div className="day_in  ">
         <div className="container mx-auto ">
           <div className="py-10">
-            <div className="mx-auto w-[80%] pt-10">
+            <div className="mx-auto  pt-10">
               <p className="h2-text font-bold">{t("day_head")}</p>
               <p className="p-small-text my-5 w-[70%]">{t("day_text")}</p>
               <Link href="/partner">

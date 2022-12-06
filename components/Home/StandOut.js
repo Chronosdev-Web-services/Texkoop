@@ -8,7 +8,7 @@ const StandOut = () => {
   const { t } = useTranslation("home");
   const { why_we_stand_out } = landing;
   return (
-    <section className="my-20 mx-auto w-[90%] max-w-[1440px]">
+    <section className="my-20 mx-auto container">
       <Fade cascade duration={300}>
         <p className="h2-text font-bold my-5 text-pri_7">{t("heading2")}</p>
       </Fade>

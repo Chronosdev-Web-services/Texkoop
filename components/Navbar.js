@@ -43,7 +43,7 @@ const Navbar = () => {
   return (
     <div className={` sticky  z-10 w-full top-0 ${navOpen && "bg-white"}`}>
       {!navOpen && <div className="header_class "></div>}
-      <nav className="max-w-[1440px] w-[90%] z-20 flex lg:h-auto flex-col lg:flex-row  py-4 lg:py-7 lg:items-center font-[600] lg:text-white mx-auto">
+      <nav className="container z-20 flex lg:h-auto flex-col lg:flex-row  py-4 lg:py-7 lg:items-center font-[600] lg:text-white mx-auto">
         <div className="flex justify-between relative z-20 lg:block items-center w-full lg:w-auto">
           <div className=" max-w-[200px]">
             <Link href="/">
@@ -111,15 +111,25 @@ const Navbar = () => {
             <Button text={t("Nav5")} />
           </Link>
 
-          <div className={`dropdown px-1 space-x-3 relative middle flex`}>
-            <div className="flex">
-              <img
-                src={`https://flagcdn.com/w20/${image}.png`}
-                srcSet={`https://flagcdn.com/w40/${image}.png 2x`}
-                width="30"
-                height="10"
-                alt="Flag of locale"
-              />
+          <div className={`dropdown px-1 space-x-3 relative middle  flex`}>
+            <div className="flex items-center">
+              {name === "En" ? (
+                <div>
+                  <img
+                    src="https://flagcdn.com/gb.svg"
+                    width="30"
+                    alt="United Kingdom"
+                  />
+                </div>
+              ) : (
+                <div>
+                  <img
+                    src="https://flagcdn.com/fr.svg"
+                    width="30"
+                    alt="United Kingdom"
+                  />
+                </div>
+              )}
             </div>
             <p>{name}</p>
             <div

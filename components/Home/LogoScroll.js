@@ -1,27 +1,16 @@
 import React from "react";
 import { landing } from "../../utils/data";
 import Image from "next/image";
+import styles from "../../styles/slider.module.css";
 
 const LogoScroll = () => {
   const { logos } = landing;
   return (
-    <section>
-      <div className="flex animate-slide2 items-center overflow-hidden">
+    <section className={styles.slider_area}>
+      <div className={`items-center ${styles.wrapper}`}>
         {logos.map((logo) => (
-          <div
-            key={logo.id}
-            className=" w-[350px] h-[250px] ml-[50px]   transition-transform"
-          >
-            <div>
-              <Image
-                src={logo.image}
-                alt={logo.alt}
-                className="h-[250px]"
-                width="350"
-                height="250"
-                layout="responsive"
-              />
-            </div>
+          <div key={logo.id} className={styles.item}>
+            <img src={logo.image} alt={logo.alt} className="" />
           </div>
         ))}
       </div>

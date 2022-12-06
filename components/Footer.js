@@ -19,7 +19,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-pri">
-      <div className="mt-10 py-5 mx-auto max-w-[1440px] w-[90%] text-white text-[14px] font-normal">
+      <div className="mt-10 py-5 mx-auto container text-white text-[14px] font-normal">
         <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-y-7 gap-x-5">
           <div className="flex flex-col gap-5 ">
             <div className="">

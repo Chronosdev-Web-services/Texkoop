@@ -14,7 +14,7 @@ const PartnerWithUs = () => {
       <div className=" blue_clip ">
         <div className="container mx-auto md:flex">
           <div className="md:min-w-[60%]  py-10">
-            <div className="w-[80%] mx-auto ">
+            <div className="w-[80%] ">
               <div className="w-[80%]  md:[w-90%] text-white grid gap-5 gap-y-5 my-10">
                 <p className="uppercase text-sec nav-text">
                   {t("partner_top")}
