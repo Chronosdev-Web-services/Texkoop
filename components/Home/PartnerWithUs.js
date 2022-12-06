@@ -5,6 +5,7 @@ import React from "react";
 import { Fade, Slide } from "react-awesome-reveal";
 import Button from "../Reusable/Button";
 import man from "./../../public/images/1/j.svg";
+import styles from "../../styles/z_index.module.css";
 
 const PartnerWithUs = () => {
   const { t, lang } = useTranslation("home");
@@ -37,7 +38,7 @@ const PartnerWithUs = () => {
         <Image
           src={man}
           alt="delivery woman"
-          className="absolute bottom-0 right-1/3 translate-x-1/2 z-10 hidden w-[40%] lg:w-[35%] 2xl:w-[20%] md:block"
+          className={`${styles.picture} absolute bottom-0 right-1/3 translate-x-1/2  hidden w-[40%] lg:w-[35%] 2xl:w-[20%] md:block`}
         />
       </div>
     </section>

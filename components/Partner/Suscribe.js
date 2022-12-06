@@ -1,6 +1,7 @@
 import useTranslation from "next-translate/useTranslation";
 import React from "react";
 import Button from "../Reusable/Button";
+import styles from "../../styles/Check.module.css";
 
 const Suscribe = () => {
   const createClient = async (form_values) => {
@@ -100,7 +101,11 @@ const Suscribe = () => {
           {t("number")} <span className="text-red-600">*</span>
         </label> */}
         <label for="type">Choose type:</label>
-        <select name="form_type" id="type">
+        <select
+          name="form_type"
+          id="type"
+          className=" w-full p-3 outline-none border-black bg-transparent border"
+        >
           <option value="partner">Partner</option>
           <option value="client">Client</option>
         </select>
@@ -118,16 +123,17 @@ const Suscribe = () => {
         />
       </div>
       <div className="flex items-center gap-3 w-[2/3]">
-        <input
-          required
-          type="checkbox"
-          className="p-3 w-[20px] h-[20px] outline-none rounded-none border-black border"
-        />
+        <label className={styles.checkbox}>
+          <input type="checkbox" />
+          <span className={styles.checkmark}></span>
+        </label>
+
         <label className="text-xs capitalize">
           {t("select")} <span className="text-red-600">*</span>
           {t("required")}
         </label>
       </div>
+
       <div>
         <Button text={t("button_a")} className="capitalize" />
       </div>

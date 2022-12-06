@@ -1,6 +1,7 @@
 import useTranslation from "next-translate/useTranslation";
 import React, { useState } from "react";
 import Button from "../Reusable/Button";
+import styles from "../../styles/Check.module.css";
 var cities = ["Paris", "Lyon", "Marseille", "Toulouse", "Nice"];
 const RideForm = () => {
   const createRider = async (form_values) => {
@@ -89,11 +90,11 @@ const RideForm = () => {
         <select
           required
           name="city"
-          className=" w-full p-3 outline-none border-white bg-transparent border"
+          className=" w-full p-3 outline-none border-white bg-pri border"
         >
           {cities.map((item) => (
             <option key={item}>{item}</option>
-          ))}{" "}
+          ))}
         </select>
       </div>
       <div className="col-span-2">
@@ -121,11 +122,10 @@ const RideForm = () => {
         />
       </div>
       <div className="flex items-center gap-5 col-span-2 ">
-        <input
-          required
-          type="checkbox"
-          className="w-[20px] h-[20px] outline-none rounded-none border-black border"
-        />
+        <label className={`${styles.checkbox} `}>
+          <input type="checkbox" />
+          <span className={styles.checkmark}></span>
+        </label>
         <label className="text-xs">
           {t("select_2")}
           <span className="text-red-600">*</span>

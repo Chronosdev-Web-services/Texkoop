@@ -2,8 +2,9 @@ import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { Fade, Slide } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 import Button from "../Reusable/Button";
+import styles from "../../styles/z_index.module.css";
 
 const WhatWillYouNeed = () => {
   const { t } = useTranslation("partner");
@@ -22,7 +23,7 @@ const WhatWillYouNeed = () => {
             style={{
               objectFit: "cover",
             }}
-            className="z-10"
+            className={styles.picture}
           />
         </div>
         <div className="w-[80%]  md:[w-90%] mx-auto md:mb-40 my-20 p-text">

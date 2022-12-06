@@ -8,7 +8,7 @@ const FAQ = () => {
   const { t } = useTranslation("faq");
   return (
     <Layout title="FAQs">
-      <section className="w-full relative h-[600px]">
+      <section className="w-full relative h-[70vh]">
         <Image
           src="/images/6/6a.svg"
           quality={100}
@@ -22,7 +22,7 @@ const FAQ = () => {
         <div className="absolute top-1/2 translate-y-1/2 w-full ">
           <div className=" max-w-[1440px]  text-white w-[90%] mx-auto">
             <div className="mx-10">
-              <p className="h1-text font-bold">{t("main_head")}</p>
+              <div className="h1-text font-bold">{t("main_head")}</div>
             </div>
           </div>
         </div>

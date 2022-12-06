@@ -381,3 +381,17 @@ export const privacy = {
     },
   ],
 };
+export const FAQ = {
+  questions: [
+    {
+      id: 1,
+      text: "About Texkoop",
+      data: [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }],
+    },
+    {
+      id: 2,
+      text: "Partnership",
+      data: [{ id: 1 }, { id: 2 }],
+    },
+  ],
+};
