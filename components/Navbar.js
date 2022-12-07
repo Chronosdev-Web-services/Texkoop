@@ -43,7 +43,7 @@ const Navbar = () => {
   return (
     <div className={` sticky  z-10 w-full top-0 ${navOpen && "bg-white"}`}>
       {!navOpen && <div className="header_class "></div>}
-      <nav className="container z-20 flex lg:h-auto flex-col lg:flex-row  py-4 lg:py-7 lg:items-center font-[500] lg:text-white mx-auto">
+      <nav className="container w-[90%] z-20 flex lg:h-auto flex-col lg:flex-row  py-4 lg:py-7 lg:items-center font-[500] lg:text-white mx-auto">
         <div className="flex justify-between relative z-20 lg:block items-center w-full lg:w-auto">
           <div className=" max-w-[200px]">
             <Link href="/">
