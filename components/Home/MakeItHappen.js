@@ -5,7 +5,7 @@ import { Fade } from "react-awesome-reveal";
 const MakeItHappen = () => {
   const { t, lang } = useTranslation("home");
   return (
-    <section className="mx-auto container my-10 ">
+    <section className="mx-auto container w-[90%] my-10 ">
       <p className="h2-text text-pri my-5 font-bold">{t("happen_head")}</p>
       <Fade cascade damping={0.8}>
         <div className="relative">

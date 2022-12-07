@@ -8,7 +8,7 @@ const DayIn = () => {
   return (
     <section className=" text-white bg-sec md:my-40 md:mb-60">
       <div className="day_in  ">
-        <div className="container mx-auto ">
+        <div className="container w-[90%] mx-auto ">
           <div className="py-10">
             <div className="mx-auto  pt-10">
               <p className="h2-text font-bold">{t("day_head")}</p>

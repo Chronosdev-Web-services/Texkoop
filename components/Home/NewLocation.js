@@ -11,9 +11,9 @@ const NewLocation = () => {
   return (
     <section className=" bg-pri relative">
       <div className="clip w-[100px] h-[100px] top-0 left-0 absolute bg-sec"></div>
-      <div className="max-w-[1440px] mx-auto md:flex ">
+      <div className=" container mx-auto md:flex ">
         <div className="md:w-[55%] grid  place-items-center">
-          <div className="w-[80%] ">
+          <div className=" ">
             <div className="  md:[w-90%] text-white mt-auto grid gap-5 my-10">
               <Fade cascade damping={0.4}>
                 <p className="uppercase text-sec nav-text mt-20">

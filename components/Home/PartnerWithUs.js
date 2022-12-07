@@ -12,7 +12,7 @@ const PartnerWithUs = () => {
   return (
     <section className="bg-sec relative md:my-40">
       <div className=" blue_clip ">
-        <div className="container mx-auto md:flex">
+        <div className="container w-[90%] mx-auto md:flex">
           <div className="md:min-w-[60%]  py-10">
             <div className="w-[80%] ">
               <div className="w-[80%]  md:[w-90%] text-white grid gap-5 gap-y-5 my-10">

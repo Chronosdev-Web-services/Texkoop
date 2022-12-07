@@ -12,7 +12,7 @@ const Delivery = () => {
   return (
     <>
       {" "}
-      <section className="mx-auto container my-10">
+      <section className="mx-auto w-[90%] container my-10">
         <div>
           <Fade delay={200} duration={700} damping={0.2}>
             <p className="h2-text font-bold w-[80%] md:w-[70%] text-pri_7">

@@ -7,8 +7,8 @@ const Partners = () => {
   const { t, lang } = useTranslation("home");
 
   return (
-    <section className=" mx-auto container grid md:grid-cols-2 ">
-      <div className=" flex flex-col gap-10 mt-20">
+    <section className=" mx-auto  container grid md:grid-cols-2 ">
+      <div className="ml-auto w-[90%] flex flex-col gap-10 mt-20">
         <Fade>
           <p className="md:w-[90%] h2-text text-pri_7 font-bold ">
             {t("local_businesses")}
