@@ -8,7 +8,7 @@ const TermsConditions = () => {
   const { data } = terms;
   return (
     <Layout title="Terms and Conditions">
-      <section className="container mx-auto mb-20">
+      <section className="container mx-auto w-[90%] mb-20">
         <p className="h2-text">{t("main_head")}</p>
         <div>
           {data.map((data) => (

@@ -20,9 +20,9 @@ const Service = () => {
         {services.map((card) => (
           <div
             key={card.id}
-            className="px-5 py-3 grid gap-5 hover:bg-sec transition"
+            className="px-5 py-3 flex flex-col  gap-5 hover:bg-sec transition"
           >
-            <div>
+            <div className="min-h-[220px] max-h-[220px]">
               <img
                 src={card.image}
                 alt="how we stand out"

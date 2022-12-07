@@ -20,7 +20,7 @@ const Delivery = () => {
               <br></br>
               {t("2aii")}
             </p>
-            <p className="md:w-[70%] p-text mt-5">{t("2aiii")}</p>
+            <p className="md:w-[65%] p-text mt-5">{t("2aiii")}</p>
           </Fade>
         </div>
       </section>
@@ -41,7 +41,7 @@ const Delivery = () => {
               />
             </div>
 
-            <div className="px-5 py-3 grid gap-5">
+            <div className="px-5 py-3 flex flex-col justify-between gap-5">
               <p className="text-[12px]">{t(card.nav)}</p>
               <Fade cascade>
                 <p className="h4-text font-bold">{t(card.head)}</p>

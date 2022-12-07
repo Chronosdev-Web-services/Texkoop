@@ -21,7 +21,7 @@ const BestDo = () => {
         }}
       />
       <div className="absolute top-1/2 -translate-y-1/2 w-full ">
-        <div className=" max-w-[1440px]  text-white w-[90%] mx-auto">
+        <div className=" container  text-white w-[95%] mx-auto">
           <div className="mx-10">
             <div className="h1-text font-bold">
               <Fade cascade duration={300}>

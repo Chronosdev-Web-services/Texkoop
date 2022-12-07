@@ -18,11 +18,11 @@ const StandOut = () => {
             key={card.id}
             className="px-5 py-3 grid gap-5 hover:bg-sec transition"
           >
-            <div>
+            <div className="">
               <Image
                 src={card.image}
                 alt="how we stand out"
-                className="w-full object-cover"
+                className="w-full object-cover max-h-[200px] min-h-[200px]"
                 width="100"
                 height="100"
                 priority
