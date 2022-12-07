@@ -9,6 +9,7 @@
     "/contact": ["contact", "partner"],
     "/services": ["services", "home"],
     "/FAQ": ["faq"],
-    "/privacy_policy": ["privacy"]
+    "/privacy_policy": ["privacy"],
+    "/terms_&_conditions": ["terms"]
   }
 }

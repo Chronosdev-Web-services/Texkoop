@@ -3,13 +3,13 @@
 
   "head_a": "TEXKOOP Terms of Use",
 
-  "text_a_ii": "23/12/2022",
-  "text_a_iii": "Welcome to the TEXKOOP Terms of Use agreement. For purposes of this agreement, “Site” refers to the Company’s website, which can be accessed at www.texkoop.com. “Service” refers to the Company’s services accessed via the Site, in which users can order a delivery of their products. The terms “we,” “us,” and “our” refer to the Company. “You” refers to you, as a user of our Site or our Service.",
-  "text_a_iv": "The following Terms of Use apply when you view or use the Service via our website located at www.texkoop.com.",
-  "text_a_v": "Please review the following terms carefully. By accessing or using the Service, you signify your agreement to these Terms of Use. If you do not agree to be bound by these Terms of Use in their entirety, you may not access or use the Service.",
+  "text_a_i": "23/12/2022",
+  "text_a_ii": "Welcome to the TEXKOOP Terms of Use agreement. For purposes of this agreement, “Site” refers to the Company’s website, which can be accessed at www.texkoop.com. “Service” refers to the Company’s services accessed via the Site, in which users can order a delivery of their products. The terms “we,” “us,” and “our” refer to the Company. “You” refers to you, as a user of our Site or our Service.",
+  "text_a_iii": "The following Terms of Use apply when you view or use the Service via our website located at www.texkoop.com.",
+  "text_a_iv": "Please review the following terms carefully. By accessing or using the Service, you signify your agreement to these Terms of Use. If you do not agree to be bound by these Terms of Use in their entirety, you may not access or use the Service.",
   "head_b": "Privacy policy",
 
-  "text_b_i": "The Company respects the privacy of its Service users. Please refer to the Company’s Privacy Policy (found here: www.texkoop.com/privacy-policy which explains how we collect, use, and disclose information that pertains to your privacy. When you access or use the Service, you signify your agreement to the Privacy Policy as well as these Terms of Use.",
+  "text_b": "The Company respects the privacy of its Service users. Please refer to the Company’s Privacy Policy (found here: www.texkoop.com/privacy-policy which explains how we collect, use, and disclose information that pertains to your privacy. When you access or use the Service, you signify your agreement to the Privacy Policy as well as these Terms of Use.",
   "head_c": "About the service",
 
   "text_c": "The Service allows you to order a delivery of your product.",
@@ -34,9 +34,9 @@
   "text_e_xi": "· provide false or inaccurate information when registering an account;",
   "text_e_xii": "· interfere or attempt to interfere with the proper functioning of the Service;",
   "text_e_xiii": "· make any automated use of the Site, the Service or the related systems, or take any action that we deem to impose or to potentially impose an unreasonable or disproportionately large load on our servers or network infrastructure;",
-  "text_e_ixx": "· bypass any robot exclusion headers or other measures we take to restrict access to the Service, or use any software, technology, or device to scrape, spider, or crawl the Service or harvest or manipulate data;",
-  "text_e_xx": "· circumvent, disable or otherwise interfere with any security-related features of the Service or features that prevent or restrict use or copying of content, or enforce limitations on use of the Service or the content accessible via the Service; or",
-  "text_e_xxi": "· publish or link to malicious content of any sort, including that intended to damage or disrupt another user’s browser or computer.",
+  "text_e_xiv": "· bypass any robot exclusion headers or other measures we take to restrict access to the Service, or use any software, technology, or device to scrape, spider, or crawl the Service or harvest or manipulate data;",
+  "text_e_xv": "· circumvent, disable or otherwise interfere with any security-related features of the Service or features that prevent or restrict use or copying of content, or enforce limitations on use of the Service or the content accessible via the Service; or",
+  "text_e_xvi": "· publish or link to malicious content of any sort, including that intended to damage or disrupt another user’s browser or computer.",
 
   "head_f": "Posting and conduct restrictions",
 
@@ -63,7 +63,7 @@
 
   "head_h": "Links to other sites and/or materials",
 
-  "text_h_i": "As part of the Service, we may provide you with convenient links to third party website(s) (“Third Party Sites”) as well as content or items belonging to or originating from third parties (the “Third Party Applications, Software or Content”). These links are provided as a courtesy to Service subscribers. We have no control over Third Party Sites or Third Party Applications, Software or Content or the promotions, materials, information, goods or services available on these Third Party Sites or Third Party Applications, Software or Content. Such Third Party Sites and Third Party Applications, Software or Content are not investigated, monitored or checked for accuracy, appropriateness, or completeness, and we are not responsible for any Third Party Sites accessed through the Site or any Third Party Applications, Software or Content posted on, available through or installed from the Site, including the content, accuracy, offensiveness, opinions, reliability, privacy practices or other policies of or contained in the Third Party Sites or the Third Party Applications, Software or Content. Inclusion of, linking to or permitting the use or installation of any Third Party Site or any Third Party Applications, Software or Content does not imply our approval or endorsement. If you decide to leave the Site and access the Third Party Sites or to use or install any Third Party Applications, Software or Content, you do so at your own risk and you should be aware that our terms and policies, including these Terms of Use, no longer govern. You should review the applicable terms and policies, including privacy and data gathering practices, of any Third Party Site to which you navigate from the Site or relating to any applications you use or install from the Third Party Site.",
+  "text_h": "As part of the Service, we may provide you with convenient links to third party website(s) (“Third Party Sites”) as well as content or items belonging to or originating from third parties (the “Third Party Applications, Software or Content”). These links are provided as a courtesy to Service subscribers. We have no control over Third Party Sites or Third Party Applications, Software or Content or the promotions, materials, information, goods or services available on these Third Party Sites or Third Party Applications, Software or Content. Such Third Party Sites and Third Party Applications, Software or Content are not investigated, monitored or checked for accuracy, appropriateness, or completeness, and we are not responsible for any Third Party Sites accessed through the Site or any Third Party Applications, Software or Content posted on, available through or installed from the Site, including the content, accuracy, offensiveness, opinions, reliability, privacy practices or other policies of or contained in the Third Party Sites or the Third Party Applications, Software or Content. Inclusion of, linking to or permitting the use or installation of any Third Party Site or any Third Party Applications, Software or Content does not imply our approval or endorsement. If you decide to leave the Site and access the Third Party Sites or to use or install any Third Party Applications, Software or Content, you do so at your own risk and you should be aware that our terms and policies, including these Terms of Use, no longer govern. You should review the applicable terms and policies, including privacy and data gathering practices, of any Third Party Site to which you navigate from the Site or relating to any applications you use or install from the Third Party Site.",
 
   "head_i": "Copyright complaints and copyright agent",
 
@@ -79,7 +79,7 @@
   "text_i_x": "(c) Counter-Notices. If you believe that your User Content that has been removed from the Site is not infringing, or that you have the authorization from the copyright owner, the copyright owner's agent, or pursuant to the law, to post and use the content in your User Content, you may send a counter-notice containing the following information to our copyright agent using the contact information set forth above:",
   "text_i_xi": "1. Your physical or electronic signature;",
   "text_i_xii": "2. A description of the content that has been removed and the location at which the content appeared before it was removed;",
-  "text_i_xiii": "3.A statement that you have a good faith belief that the content was removed as a result of mistake or a misidentification of the content; and",
+  "text_i_xiii": "3. A statement that you have a good faith belief that the content was removed as a result of mistake or a misidentification of the content; and",
   "text_i_xiv": "4. Your name, address, telephone number, and email address, a statement that you consent to the jurisdiction of the federal court in France and a statement that you will accept service of process from the person who provided notification of the alleged infringement.",
   "text_i_xv": "If a counter-notice is received by our copyright agent, we may send a copy of the counter-notice to the original complaining party informing such person that it may reinstate the removed content in ten (10) business days. Unless the copyright owner files an action seeking a court order against the content provider, member or user, the removed content may (in our sole discretion) be reinstated on the Site in ten (10) to fourteen (14) business days or more after receipt of the counter-notice.",
 

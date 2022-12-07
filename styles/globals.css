@@ -32,7 +32,7 @@ html {
 }
 .h2-text {
   font-size: clamp(1.25rem, 1vw + 1rem, 2.25rem);
-  font-weight: 700;
+  font-weight: 600;
 }
 .h4-text {
   font-size: clamp(1rem, 1vw + 0.6rem, 1.563rem);

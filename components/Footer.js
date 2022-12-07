@@ -50,8 +50,9 @@ const Footer = () => {
               <Link href="/privacy_policy  ">
                 <p>{t("Foo1aii")}</p>
               </Link>
-
-              <p>{t("Foo1aiii")}</p>
+              <Link href="/terms_&_conditions">
+                <p>{t("Foo1aiii")}</p>
+              </Link>{" "}
             </div>
           </div>
           <div className="flex flex-col gap-2">
