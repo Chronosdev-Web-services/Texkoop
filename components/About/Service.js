@@ -1,4 +1,5 @@
 import useTranslation from "next-translate/useTranslation";
+import Link from "next/link";
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import { about } from "../../utils/data";
@@ -16,17 +17,17 @@ const Service = () => {
         </p>
         <p className="p-text md:w-1/2">{t("serv_text")}</p>
       </Fade>
-      <div className="my-5 grid md:grid-cols-4 gap-5">
+      <div className="my-5 grid md:grid-cols-2 lg:grid-cols-4 gap-5">
         {services.map((card) => (
           <div
             key={card.id}
-            className="px-5 py-3 flex flex-col  gap-5 hover:bg-sec transition"
+            className="px-5 py-3   md:h-[400px] xl:h-[450px] flex  flex-col  gap-5 hover:bg-sec transition"
           >
-            <div className="min-h-[220px] max-h-[220px]">
+            <div className="h-[50%] mb-10">
               <img
                 src={card.image}
                 alt="how we stand out"
-                className="w-full object-cover"
+                className="w-full object-contain"
               />
             </div>
             <Fade>
@@ -36,7 +37,9 @@ const Service = () => {
           </div>
         ))}
       </div>
-      <Button text={t("common:Nav5")} />
+      <Link href="/partner">
+        <Button text={t("common:Nav5")} />
+      </Link>
     </section>
   );
 };

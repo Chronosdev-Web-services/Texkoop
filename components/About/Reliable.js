@@ -22,7 +22,7 @@ const Reliable = () => {
             key={card.id}
             className="px-5 py-3 grid gap-5 hover:bg-sec transition"
           >
-            <div className="min-h-[300px] max-h-[300px]">
+            <div className="lg:min-h-[300px] lg:max-h-[300px] md:h-[170px]">
               <Image
                 src={card.image}
                 alt="how we stand out"

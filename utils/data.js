@@ -103,22 +103,22 @@ export const landing = {
     {
       id: 5,
       alt: "Eleclerc",
-      image: "/images/logo/logo_5.svg",
+      image: "/images/logo/logo_7.svg",
     },
     {
       id: 6,
       alt: "Eleclerc",
-      image: "/images/logo/logo_6.svg",
+      image: "/images/logo/logo_8.svg",
     },
     {
       id: 7,
       alt: "Eleclerc",
-      image: "/images/logo/logo_7.svg",
+      image: "/images/logo/logo_5.svg",
     },
     {
       id: 8,
       alt: "Eleclerc",
-      image: "/images/logo/logo_8.svg",
+      image: "/images/logo/logo_6.svg",
     },
   ],
   too_goood: [

@@ -13,13 +13,13 @@ const Expect = () => {
         <p className="h2-text md:w-1/2 font-bold">{t("expect_head")}</p>
         <p className="p-text w-1/2">{t("expect_text")} </p>
       </Fade>{" "}
-      <div className="grid my-5 md:grid-cols-3 xl:gap-20 gap-10">
+      <div className="grid my-5 md:grid-cols-2 lg:grid-cols-3 xl:gap-20 gap-10">
         {what_can_you_expect.map((card) => (
           <div
             key={card.id}
             className="px-5 py-3 grid gap-5 hover:bg-sec transition"
           >
-            <div>
+            <div className="h-[290px] 2xl:h-[350px]">
               <Image
                 src={card.image}
                 alt="how we stand out"

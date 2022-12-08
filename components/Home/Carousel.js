@@ -30,22 +30,13 @@ const Carousel_test = () => {
   return (
     <div className="slideshow">
       <div
-        className="slideshowSlider"
+        className="slideshowSlider my-5"
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
       >
         {testimonial.map((item, index) => (
           <div className="slide" key={index} cl>
             <div>
-              <div className="grid grid-cols-5 gap-5">
-                <div className="">
-                  <div className="">
-                    <img
-                      src="/images/1/f.svg"
-                      className="w-[50px] h-[50px] md:w-[100px] md:h-[100px] rounded-[50%] object-cover"
-                      alt="testimonial picture"
-                    />
-                  </div>
-                </div>
+              <div className="grid grid-cols-4 gap-5">
                 <div className="col-span-3 h-full">
                   <p className="p-text">{item.name}</p>
                   <p className="my-2 uppercase text-xs">{item.title}</p>

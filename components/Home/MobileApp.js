@@ -16,9 +16,9 @@ const MobileApp = () => {
               <br></br>
               {t("app_text_ii")}
             </p>
-            <p className="h2-text font-bold">{t("app_head_ii")}</p>
+            {/* <p className="h2-text font-bold">{t("app_head_ii")}</p> */}
           </Fade>
-          <div className="md:flex gap-10 hidden ">
+          {/* <div className="md:flex gap-10 hidden ">
             <Image
               src="/images/1/google_store.svg"
               alt="get on Google Store"
@@ -36,7 +36,7 @@ const MobileApp = () => {
               className="cursor-pointer "
               priority
             />
-          </div>
+          </div> */}
         </div>
 
         <div className="mx-auto">

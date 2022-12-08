@@ -2,7 +2,6 @@ import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import React from "react";
 import ContactForm from "../components/Contact/ContactForm";
-import GoogleMapComponent from "../components/Contact/GoogleMap";
 import Layout from "../components/Layout";
 
 const contact = () => {
@@ -25,9 +24,6 @@ const contact = () => {
       <section className="w-[90%] md:w-[80%] mx-auto max-w-[1440px] my-10">
         <p className="h2-text font-bold w-1/2">{t("contact_head")}</p>
         <p className="p-text w-1/2">{t("contact_text")}</p>
-        <div className="my-10">
-          <GoogleMapComponent />
-        </div>
       </section>
 
       <ContactForm />

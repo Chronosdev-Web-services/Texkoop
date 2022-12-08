@@ -12,17 +12,17 @@ const StandOut = () => {
       <Fade cascade duration={300}>
         <p className="h2-text font-bold my-5 text-pri_7">{t("heading2")}</p>
       </Fade>
-      <div className="my-5 grid md:grid-cols-3 lg:grid-cols-4 gap-5">
+      <div className="my-5 grid md:grid-cols-2   lg:grid-cols-4 gap-5">
         {why_we_stand_out.map((card) => (
           <div
             key={card.id}
-            className="px-5 py-3 grid gap-5 hover:bg-sec transition"
+            className="px-5 py-3 grid gap-5 hover:bg-sec transition w-[90%] lg:full mx-auto"
           >
-            <div className="">
+            <div className="md:h-[200px]">
               <Image
                 src={card.image}
                 alt="how we stand out"
-                className="w-full object-cover max-h-[200px] min-h-[200px]"
+                className="w-full object-cover  border-black md:h-[200px] "
                 width="100"
                 height="100"
                 priority
