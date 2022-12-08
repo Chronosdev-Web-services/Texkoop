@@ -746,3 +746,83 @@ export const terms = {
   ],
 };
 export const API_URL = "https://texkoop-backend.vercel.app";
+export const blog = {
+  data: [
+    {
+      id: 1,
+      name: "data1",
+    },
+    {
+      id: 2,
+      name: "data1",
+    },
+    {
+      id: 3,
+      name: "data1",
+    },
+    {
+      id: 4,
+      name: "data1",
+    },
+    {
+      id: 5,
+      name: "data1",
+    },
+    {
+      id: 6,
+      name: "data1",
+    },
+    {
+      id: 7,
+      name: "data1",
+    },
+    {
+      id: 8,
+      name: "data1",
+    },
+    {
+      id: 9,
+      name: "data1",
+    },
+    {
+      id: 10,
+      name: "data1",
+    },
+  ],
+  recent: [
+    {
+      id: 1,
+      name: "data1",
+    },
+    {
+      id: 2,
+      name: "data1",
+    },
+    {
+      id: 3,
+      name: "data1",
+    },
+  ],
+  category: [
+    {
+      id: 1,
+      name: "data1",
+    },
+    {
+      id: 2,
+      name: "data1",
+    },
+    {
+      id: 3,
+      name: "data1",
+    },
+    {
+      id: 4,
+      name: "data1",
+    },
+    {
+      id: 5,
+      name: "data1",
+    },
+  ],
+};

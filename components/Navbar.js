@@ -103,7 +103,7 @@ const Navbar = () => {
             <p>{t("Nav3")}</p>
           </Link>
           <div className="lg:mr-auto">
-            <Link href="#">
+            <Link href="/blog">
               <p>{t("Nav4")}</p>
             </Link>
           </div>
