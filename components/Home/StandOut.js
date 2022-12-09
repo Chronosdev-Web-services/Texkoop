@@ -16,7 +16,7 @@ const StandOut = () => {
         {why_we_stand_out.map((card) => (
           <div
             key={card.id}
-            className="px-5 py-3 hover:bg-sec transition w-[90%] h-[400px] lg:full mx-auto"
+            className="px-5 py-3 hover:bg-sec transition w-[90%] h-[400px] ad lg:full mx-auto"
           >
             <div className="md:h-[200px] ">
               <img
