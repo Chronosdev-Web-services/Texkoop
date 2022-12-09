@@ -7,7 +7,7 @@ const RecentPost = () => {
   const { recent } = blog;
   return (
     <>
-      <div className="border border-black p-5">
+      <div className="border border-black p-5 ">
         <p className="font-bold mb-5">Recent Post</p>
         {recent.map((item) => (
           <div className="flex justify-between my-5" key={item.id}>

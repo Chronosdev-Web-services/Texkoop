@@ -8,24 +8,22 @@ import man from "./../../public/images/1/j.svg";
 import styles from "../../styles/z_index.module.css";
 
 const PartnerWithUs = () => {
-  const { t, lang } = useTranslation("home");
+  const { t, lang } = useTranslation("blog");
   return (
-    <section className="bg-sec relative md:my-40">
+    <section className="bg-sec relative md:my-40 my-20">
       <div className=" blue_clip ">
         <div className="container w-[90%] mx-auto md:flex">
           <div className="md:min-w-[60%]  py-10">
             <div className="w-[80%] ">
               <div className="w-[80%]  md:[w-90%] text-white grid gap-5 gap-y-5 my-10">
-                <p className="uppercase text-sec nav-text">
-                  {t("partner_top")}
-                </p>
+                <p className="uppercase text-sec nav-text">{t("blog_top")}</p>
                 <Slide duration={1000}>
-                  <p className="h2-text font-bold">{t("location_text")}</p>
+                  <p className="h2-text font-bold">{t("blog_text")}</p>
                 </Slide>
 
                 <div>
                   <Link href="/partner">
-                    <Button text={t("partner_button")} />
+                    <Button text={t("blog_button")} />
                   </Link>
                 </div>
               </div>

@@ -10,7 +10,7 @@ const BlogSection = () => {
   return (
     <>
       <section className="container w-[90%] mx-auto my-20 gap-10 grid md:grid-cols-3">
-        <div className="col-start-1 row-span-2 h-full w-full">
+        <div className="col-start-1 row-span-2 h-full w-full justify-between flex flex-col">
           <RecentPost />
           <Category />
         </div>

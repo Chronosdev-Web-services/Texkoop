@@ -1,3 +1,6 @@
 .picture {
   z-index: 2;
 }
+.less_index {
+  z-index: -1;
+}

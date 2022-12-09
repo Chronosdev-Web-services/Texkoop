@@ -13,6 +13,9 @@ module.exports = {
         pri_7: "#021C47",
         sec: "#FAA019",
       },
+      fontFamily: {
+        Aharoni: ["aharoni", "san-serif"],
+      },
       screens: {},
       animation: {
         slide: "slide 20s  linear",
