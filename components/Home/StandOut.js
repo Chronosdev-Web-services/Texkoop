@@ -16,20 +16,17 @@ const StandOut = () => {
         {why_we_stand_out.map((card) => (
           <div
             key={card.id}
-            className="px-5 py-3 grid gap-5 hover:bg-sec transition w-[90%] lg:full mx-auto"
+            className="px-5 py-3 hover:bg-sec transition w-[90%] h-[400px] border border-green lg:full mx-auto"
           >
-            <div className="md:h-[200px]">
-              <Image
+            <div className="md:h-[200px] border border-red-300 ">
+              <img
                 src={card.image}
                 alt="how we stand out"
-                className="w-full object-cover  border-black md:h-[200px] "
-                width="100"
-                height="100"
-                priority
+                className="w-full object-cover border border-black h-full"
               />
             </div>
             <Fade cascade damping={0.4}>
-              <p className="text-lg font-bold ">{t(card.head)}</p>
+              <p className="text-lg font-bold mt-5">{t(card.head)}</p>
               <p className="text-sm">{t(card.text)}</p>
             </Fade>
           </div>
