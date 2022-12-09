@@ -8,6 +8,36 @@ import Layout from "../../components/Layout";
 import { blog } from "../../utils/data";
 
 const BlogPage = () => {
+  const [recentArticles, setRecentArticles] = React.useState(undefined)
+  const [categories, setCategories] = React.useState(undefined)
+  const [allBlogs, setAllBlogs] = React.useState(undefined)
+  const getData1 = async()=>{
+    const res =await fetch("/api/blog/recent-article-category")
+    const response = await res.json()
+    // console.log(response, response.data)
+    if (res.status === 200) {
+      setRecentArticles(response.data.latest_articles)
+      setCategories(response.data.categories)
+    }
+    
+  }
+
+  const getArticles = async()=>{
+    const resArticles =await fetch("/api/blog/articles")
+    const responseArticles = await resArticles.json()
+    console.log('TTT',responseArticles, responseArticles.data)
+    if (resArticles.status === 200) {
+      console.log(responseArticles)
+      setAllBlogs(responseArticles.data.results)
+    }
+    
+  }
+
+  
+  React.useEffect(()=>{
+    getData1()
+    getArticles()
+  }, [])
   const { data } = blog;
   return (
     <Layout title="Blog Homepage">
@@ -25,11 +55,11 @@ const BlogPage = () => {
       </section>
       <section className="container w-[90%] mx-auto my-20 gap-10 grid md:grid-cols-3">
         <div className="col-start-1 row-span-2 h-full w-full justify-between flex flex-col">
-          <RecentPost />
-          <Category />
+          <RecentPost data={recentArticles}/>
+          <Category data={categories} />
         </div>
-        {data.map((item) => (
-          <SingleBlog key={item.id} />
+        {allBlogs?.map((item) => (
+          <SingleBlog data={item} key={item.id} />
         ))}
       </section>
       <PartnerWithUs />
