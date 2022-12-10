@@ -9,7 +9,7 @@ const MakeItHappen = () => {
       <p className="h2-text text-pri my-5 font-bold">{t("happen_head")}</p>
       <Fade cascade damping={0.8}>
         <div className="relative">
-          <div className="  md:grid-cols-4 grid md:gap-10 p-text text-pri">
+          <div className="  md:grid-cols-4 grid gap-5 md:gap-10 p-text text-pri">
             <div className="mx-auto ">
               <div className="how_we_do ">
                 <img
