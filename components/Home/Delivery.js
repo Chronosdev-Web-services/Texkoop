@@ -28,9 +28,9 @@ const Delivery = () => {
         {delivery.map((card) => (
           <div
             key={card.id}
-            className=" shadow-md hover:bg-sec transition duration-500 card_"
+            className="flex flex-col shadow-md hover:bg-sec transition duration-500 card_"
           >
-            <div>
+            <div className="border border-red">
               <Image
                 src={card.image}
                 alt="what we do"
@@ -41,11 +41,11 @@ const Delivery = () => {
               />
             </div>
 
-            <div className="px-5 py-3 flex flex-col justify-between gap-5">
+            <div className="px-5 py-3 flex flex-col ">
               <p className="text-[12px]">{t(card.nav)}</p>
               <Fade cascade>
                 <p className="h4-text font-bold">{t(card.head)}</p>
-                <p className="p-text">{t(card.text)}</p>
+                <p className="p-text mt-5">{t(card.text)}</p>
               </Fade>
               <div className="flex justify-end">
                 <Link href="/partner">

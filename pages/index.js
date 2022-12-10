@@ -10,16 +10,25 @@ import TooGood from "../components/Home/TooGood";
 import PartnerWithUs from "../components/Home/PartnerWithUs";
 import MobileApp from "../components/Home/MobileApp";
 import LogoScroll from "../components/Home/LogoScroll";
+import { useRef } from "react";
 
 export default function Home() {
+  const videoRef = useRef();
+  const setPlayBack = () => {
+    videoRef.current.playbackRate = 0.5;
+  };
   return (
     <Layout title="Homepage">
       <div className=" mx-auto">
         <div>
           <video
             src="/videos/1.mp4"
-            muted
+            onCanPlay={() => setPlayBack()}
             autoPlay
+            playback
+            ref={videoRef}
+            loop
+            muted
             className="w-full object-cover h-full"
           ></video>
         </div>

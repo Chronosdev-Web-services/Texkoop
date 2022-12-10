@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
   Router.events.on("routeChangeComplete", (url) => {
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    });
   });
   return <>{loading ? <Loader /> : <Component {...pageProps} />}</>;
 }

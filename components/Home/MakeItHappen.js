@@ -21,10 +21,10 @@ const MakeItHappen = () => {
             </div>
             <div>
               <div className="">
-                <img
+                {/* <img
                   src="/images/1/arrow_1.svg"
                   className="object-contain rotate-90 w-[50%] ml-auto md:w-full md:rotate-0"
-                />
+                /> */}
               </div>
             </div>
             <div className="mx-auto">
@@ -37,10 +37,10 @@ const MakeItHappen = () => {
             {/* side arrow  */}
 
             <div className=" row-span-2 items center flex md:flex-start">
-              <img
+              {/* <img
                 src="/images/1/arrow-down.svg"
                 className="object-containt-contain w-[40%] ml-auto md:w-[80%]"
-              />
+              /> */}
             </div>
             {/* side arrow  */}
             {/* second row */}
@@ -56,10 +56,10 @@ const MakeItHappen = () => {
             </div>
             <div>
               <div className="">
-                <img
+                {/* <img
                   src="/images/1/arrow_1.svg"
                   className="w-[50%] md:w-full flex ml-auto rotate-90 object-containt-contain md:rotate-180"
-                />
+                /> */}
               </div>
               <p className=""></p>
             </div>

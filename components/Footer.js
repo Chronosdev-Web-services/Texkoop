@@ -33,7 +33,7 @@ const Footer = () => {
               />
             </div>
 
-            <div className="flex gap-">
+            <div className="flex gap-2">
               <AiFillFacebook size={40} color="#FAA019" />
               <AiFillTwitterSquare size={40} color="#FAA019" />
               <AiFillInstagram size={40} color="#FAA019" />
@@ -103,10 +103,6 @@ const Footer = () => {
               <div className="flex items-center gap-1">
                 <AiOutlineMail color="#FAA019" />
                 <p>info@texkoop.com</p>
-              </div>
-              <div className="flex items-center gap-1">
-                <AiFillClockCircle color="#FAA019" />
-                <p>08:00 AM - 21:00 PM</p>
               </div>
             </div>
           </div>
